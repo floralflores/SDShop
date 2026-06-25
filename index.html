@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -5,30 +6,85 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- чекбокс, используемый для реализации логики открытия/закрытия корзины без Java -->
     <input type="checkbox" id="cart-drawer-toggle">
+    
+    <!-- главная сайта содержит логотип ссылку на главную страницу и кнопку корзины -->
     <div class="site-header">
-        <a href="index.html" class="header-logo"><img src="sweetdreamsshop.jpg" alt="Sweet Dreams Shop"></a>
-        <div class="header-cart"><label for="cart-drawer-toggle" style="cursor:pointer; display:block; height:100%;"><svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg></label></div>
+        <a href="index.html" class="header-logo">
+            <img src="sweetdreamsshop.jpg" alt="Sweet Dreams Shop">
+        </a>
+        <div class="header-cart">
+            <label for="cart-drawer-toggle" style="cursor:pointer; display:block; height:100%;">
+                <svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+            </label>
+        </div>
     </div>
 
+    <!-- Затемняющий фон при открытой корзине. -->
     <label for="cart-drawer-toggle" class="cart-overlay"></label>
+    
+    <!-- Боковая панель корзины -->
     <div class="cart-sidebar">
-        <div class="cart-header"><h2 style="margin:0;">YOUR CART</h2><label for="cart-drawer-toggle" class="close-cart">&times;</label></div>
+        <!-- Шапка корзины с заголовком и кнопкой-крестиком для закрытия панели -->
+        <div class="cart-header">
+            <h2 style="margin:0;">YOUR CART</h2>
+            <label for="cart-drawer-toggle" class="close-cart">&times;</label>
+        </div>
         <div style="text-align:center; color:#888; margin-top:50px;">Ваша корзина пуста</div>
     </div>
 
+    <!-- Основная страница навигации по брендам -->
     <div class="hub-container">
-        <a href="nike.html" class="brand-card"><div class="brand-logo nike-logo">NIKE</div><div class="view-text">VIEW COLLECTION</div></a>
-        <a href="balenciaga.html" class="brand-card"><div class="brand-logo balenciaga-logo">BALENCIAGA</div><div class="view-text">VIEW COLLECTION</div></a>
-        <a href="erd.html" class="brand-card"><div class="brand-logo erd-logo">ERD</div><div class="view-text">VIEW COLLECTION</div></a>
+        <!-- Карточка-ссылка на страницу коллекции NIKE -->
+        <a href="nike.html" class="brand-card">
+            <div class="brand-logo nike-logo">NIKE</div>
+            <div class="view-text">VIEW COLLECTION</div>
+        </a>
+        <!-- Карточка-ссылка на страницу коллекции BALENCIAGA -->
+        <a href="balenciaga.html" class="brand-card">
+            <div class="brand-logo balenciaga-logo">BALENCIAGA</div>
+            <div class="view-text">VIEW COLLECTION</div>
+        </a>
+        <!-- Карточка-ссылка на страницу коллекции ERD -->
+        <a href="erd.html" class="brand-card">
+            <div class="brand-logo erd-logo">ERD</div>
+            <div class="view-text">VIEW COLLECTION</div>
+        </a>
     </div>
 
+    <!-- Скрытый чекбокс для логики открытия/закрытия модального окна "Обратная связь" -->
     <input type="checkbox" id="feedback-toggle">
-    <div class="feedback-modal"><div class="feedback-content"><label for="feedback-toggle" class="close-feedback">&times;</label><h2 style="margin-top:0; color:#fff;">ОБРАТНАЯ СВЯЗЬ</h2><p style="color:#888; font-size:13px; margin-bottom:20px;">Напишите нам напрямую на<br><b style="color:#fff;">swdreamsshop@gmail.com</b></p><input type="text" class="feedback-input" placeholder="Ваш Email"><textarea class="feedback-textarea" placeholder="Ваш вопрос..."></textarea><label for="feedback-toggle" class="feedback-submit">Отправить</label></div></div>
+    
+    <!-- Всплывающее модальное окно обратной связи -->
+    <div class="feedback-modal">
+        <div class="feedback-content">
+            <!-- Кнопка-крестик для закрытия формы -->
+            <label for="feedback-toggle" class="close-feedback">&times;</label>
+            <h2 style="margin-top:0; color:#fff;">ОБРАТНАЯ СВЯЗЬ</h2>
+            <!-- Информационный текст с контактами -->
+            <p style="color:#888; font-size:13px; margin-bottom:20px;">Напишите нам напрямую в Telegram<br><b style="color:#fff;">@terentiyok</b></p>
+            <!-- Поле для ввода Email пользователя -->
+            <input type="text" class="feedback-input" placeholder="Ваш Email">
+            <!-- Текстовое поле для ввода сообщения/вопроса -->
+            <textarea class="feedback-textarea" placeholder="Ваш вопрос..."></textarea>
+            <!-- Кнопка "Отправить". Сейчас настроена на закрытие модального окна -->
+            <label for="feedback-toggle" class="feedback-submit">Отправить</label>
+        </div>
+    </div>
 
     <div class="footer-wrap">
-        <div class="footer-left"><img src="image_338baf.png" alt="О нас"><div class="about-box"><h3>О нас</h3><p>Sweet Dreams Shop — концептуальный бутик премиальной и редкой обуви. Основан в 2018 году. Наш флагманский магазин находится по адресу: г. Москва, Столешников переулок, д. 7.</p></div></div>
+        <!-- Левый блок подвала: изображение и краткая информация о компании -->
+        <div class="footer-left">
+            <img src="image_338baf.png" alt="О нас">
+            <div class="about-box">
+                <h3>О нас</h3>
+                <p>Sweet Dreams Shop — концептуальный бутик премиальной и редкой обуви. Основан в 2018 году. Наш флагманский магазин находится по адресу: г. Москва, Столешников переулок, д. 7.</p>
+            </div>
+        </div>
+        <!-- Центральный блок подвала: информация о копирайте -->
         <div class="footer-center">© SWDREAMS, 2026</div>
+        <!-- Правый блок подвала: кнопка, активирующая модальное окно обратной связи  -->
         <label for="feedback-toggle" class="footer-right">ОБРАТНАЯ СВЯЗЬ</label>
     </div>
 </body>
