@@ -53,6 +53,7 @@ input[type="radio"],input[type="checkbox"]{position:absolute;opacity:0;filter:al
 .about-box{display:none;position:absolute;bottom:50px;left:0;width:300px;background-color:#1a1a1a;border:1px solid #333;padding:20px;color:#aaa;font-size:12px;line-height:150%;-webkit-border-radius:8px;border-radius:8px}
 .footer-left:hover .about-box{display:block}
 .about-box h3{color:#fff;margin-top:0;text-transform:uppercase}
+/* Модальное окно формы обратной связи (появление по клику на скрытый чекбокс) */
 #feedback-toggle{display:none}
 .feedback-modal{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.85);z-index:9999;display:flex;justify-content:center;align-items:center;opacity:0;pointer-events:none;transition:.3s}
 #feedback-toggle:checked~.feedback-modal{opacity:1;pointer-events:auto}
