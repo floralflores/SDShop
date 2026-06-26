@@ -71,6 +71,7 @@ input[type="radio"],input[type="checkbox"]{position:absolute;opacity:0;filter:al
 .feedback-input{background:#1a1a1a;border:1px solid #333;color:#fff;padding:12px;border-radius:6px;width:90%;margin-bottom:15px}
 .feedback-textarea{background:#1a1a1a;border:1px solid #333;color:#fff;padding:12px;border-radius:6px;width:90%;height:100px;resize:none;margin-bottom:15px}
 .feedback-submit{background:#fff;color:#000;padding:12px;border-radius:6px;font-weight:bold;cursor:pointer;display:block;width:90%;margin:0 auto;text-transform:uppercase}
+/* Выдвижная боковая панель корзины (появляется справа при нажатии на иконку) */
 .cart-overlay{position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);z-index:150;opacity:0;filter:alpha(opacity=0);visibility:hidden;-webkit-transition:.4s;transition:.4s}
 #cart-drawer-toggle:checked~.cart-overlay{opacity:1;filter:alpha(opacity=100);visibility:visible}
 .cart-sidebar{position:fixed;top:0;right:-420px;width:420px;height:100vh;background-color:#1a1a1a;border-left:1px solid #333;z-index:200;-webkit-transition:right .4s ease;transition:right .4s ease;padding:30px;box-sizing:border-box;overflow-y:auto}
