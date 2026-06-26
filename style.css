@@ -1,10 +1,13 @@
+/* Базовые стили и скрытые элементы (сброс отступов, скрытие радиокнопок и чекбоксов для логики без JS) */
 body{margin:0;padding:0;background-color:#111;color:#fff;font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}a{text-decoration:none;color:#fff}
 input[type="radio"],input[type="checkbox"]{position:absolute;opacity:0;filter:alpha(opacity=0);z-index:-1}
+/* Верхняя панель навигации (шапка сайта, кнопка назад и логотип) */
 .site-header{position:fixed;top:0;left:0;width:100%;height:75px;background-color:#111;border-bottom:1px solid #333;z-index:50}
 .header-back{float:left;margin-top:25px;margin-left:50px;color:#888;font-weight:bold;font-size:14px}
 .header-back:hover{color:#fff}
 .header-logo{position:absolute;left:50%;margin-left:-100px;top:12px;width:200px;text-align:center}
 .header-logo img{height:50px;-webkit-filter:invert(1) brightness(1.5);filter:invert(1) brightness(1.5)}
+/* Иконка корзины, логика увеличения счетчика товаров и его отображение */
 .header-cart{float:right;margin-top:20px;margin-right:50px;cursor:pointer;position:relative;width:30px;height:30px}
 .header-cart svg{width:100%;height:100%;fill:#fff}
 .cart-badge{display:none;position:absolute;top:-5px;right:-10px;background-color:#fff;color:#000;font-size:12px;font-weight:bold;width:20px;height:20px;-webkit-border-radius:10px;border-radius:10px;text-align:center;line-height:20px}
