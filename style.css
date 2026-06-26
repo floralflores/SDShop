@@ -15,6 +15,7 @@ input[type="radio"],input[type="checkbox"]{position:absolute;opacity:0;filter:al
 .cart-badge::after{content:counter(cart-counter)}
 /* Логика изменения состояния кнопки внутри карточки товара при успешном добавлении в корзину */
 #cart-item-1:checked~.site-header .cart-badge,#cart-item-2:checked~.site-header .cart-badge,#cart-item-3:checked~.site-header .cart-badge,#cart-item-4:checked~.site-header .cart-badge,#cart-item-5:checked~.site-header .cart-badge,#cart-item-6:checked~.site-header .cart-badge,#cart-item-7:checked~.site-header .cart-badge,#cart-item-8:checked~.site-header .cart-badge,#cart-item-9:checked~.site-header .cart-badge{display:block}
+/* Карточки выбора брендов (контейнер, эффекты увеличения и подсветки при наведении) */
 .hub-container{width:1250px;margin:150px auto 0;overflow:hidden}
 .brand-card{float:left;width:320px;height:450px;margin:0 40px;background-color:#1a1a1a;-webkit-border-radius:20px;border-radius:20px;text-align:center;border:2px solid #1a1a1a;-webkit-box-shadow:0 10px 30px rgba(0,0,0,0.5);box-shadow:0 10px 30px rgba(0,0,0,0.5);-webkit-transition:.4s;transition:.4s}
 .brand-card:hover{border-color:#555;background-color:#222;-webkit-transform:scale(1.05);transform:scale(1.05)}
@@ -22,6 +23,7 @@ input[type="radio"],input[type="checkbox"]{position:absolute;opacity:0;filter:al
 .nike-logo{color:#fff}.erd-logo{color:#8b0000}.balenciaga-logo{font-size:36px;letter-spacing:1px}
 .view-text{font-size:14px;color:#888;text-transform:uppercase;letter-spacing:2px}
 .brand-card:hover .view-text{color:#fff}
+/* Каталог товаров (сетка карточек, смена изображения товара при наведении курсора) */
 .catalog-container{width:1050px;margin:100px auto;overflow:hidden}
 .product-card{float:left;width:31%;margin:1%;background-color:#1a1a1a;-webkit-border-radius:12px;border-radius:12px;text-align:center;border:1px solid #2a2a2a;padding-bottom:20px;-webkit-transition:.3s;transition:.3s}
 .product-card:hover{-webkit-transform:translateY(-5px);transform:translateY(-5px);background-color:#222;border-color:#444}
