@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maison Margiela | Sweet Dreams Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Управляющие элементы без JavaScript: корзина, выбранные товары, размеры -->
+    <input type="checkbox" id="cart-drawer-toggle">
+    <input type="checkbox" id="acc-item-101" class="cart-toggle">
+    <input type="checkbox" id="acc-item-102" class="cart-toggle">
+    <input type="checkbox" id="acc-item-103" class="cart-toggle">
+    <input type="checkbox" id="acc-item-104" class="cart-toggle">
+    <input type="checkbox" id="acc-item-105" class="cart-toggle">
+    <input type="checkbox" id="acc-item-106" class="cart-toggle">
+    <input type="checkbox" id="acc-item-107" class="cart-toggle">
+    <input type="checkbox" id="acc-item-108" class="cart-toggle">
+    <input type="checkbox" id="acc-item-109" class="cart-toggle">
+    <input type="radio" name="g-101" id="g-101-1" checked>
+    <input type="radio" name="sz-101" id="sz-101-39">
+    <input type="radio" name="sz-101" id="sz-101-40" checked>
+    <input type="radio" name="sz-101" id="sz-101-41">
+    <input type="radio" name="sz-101" id="sz-101-42">
+    <input type="radio" name="sz-101" id="sz-101-43">
+    <input type="radio" name="sz-101" id="sz-101-44">
+    <input type="radio" name="sz-101" id="sz-101-45">
+    <input type="radio" name="sz-101" id="sz-101-46">
+    <input type="radio" name="g-102" id="g-102-1" checked>
+    <input type="radio" name="sz-102" id="sz-102-39">
+    <input type="radio" name="sz-102" id="sz-102-40" checked>
+    <input type="radio" name="sz-102" id="sz-102-41">
+    <input type="radio" name="sz-102" id="sz-102-42">
+    <input type="radio" name="sz-102" id="sz-102-43">
+    <input type="radio" name="sz-102" id="sz-102-44">
+    <input type="radio" name="sz-102" id="sz-102-45">
+    <input type="radio" name="sz-102" id="sz-102-46">
+    <input type="radio" name="g-103" id="g-103-1" checked>
+    <input type="radio" name="sz-103" id="sz-103-39">
+    <input type="radio" name="sz-103" id="sz-103-40" checked>
+    <input type="radio" name="sz-103" id="sz-103-41">
+    <input type="radio" name="sz-103" id="sz-103-42">
+    <input type="radio" name="sz-103" id="sz-103-43">
+    <input type="radio" name="sz-103" id="sz-103-44">
+    <input type="radio" name="sz-103" id="sz-103-45">
+    <input type="radio" name="sz-103" id="sz-103-46">
+    <input type="radio" name="g-104" id="g-104-1" checked>
+    <input type="radio" name="sz-104" id="sz-104-39">
+    <input type="radio" name="sz-104" id="sz-104-40" checked>
+    <input type="radio" name="sz-104" id="sz-104-41">
+    <input type="radio" name="sz-104" id="sz-104-42">
+    <input type="radio" name="sz-104" id="sz-104-43">
+    <input type="radio" name="sz-104" id="sz-104-44">
+    <input type="radio" name="sz-104" id="sz-104-45">
+    <input type="radio" name="sz-104" id="sz-104-46">
+    <input type="radio" name="g-105" id="g-105-1" checked>
+    <input type="radio" name="sz-105" id="sz-105-39">
+    <input type="radio" name="sz-105" id="sz-105-40" checked>
+    <input type="radio" name="sz-105" id="sz-105-41">
+    <input type="radio" name="sz-105" id="sz-105-42">
+    <input type="radio" name="sz-105" id="sz-105-43">
+    <input type="radio" name="sz-105" id="sz-105-44">
+    <input type="radio" name="sz-105" id="sz-105-45">
+    <input type="radio" name="sz-105" id="sz-105-46">
+    <input type="radio" name="g-106" id="g-106-1" checked>
+    <input type="radio" name="sz-106" id="sz-106-39">
+    <input type="radio" name="sz-106" id="sz-106-40" checked>
+    <input type="radio" name="sz-106" id="sz-106-41">
+    <input type="radio" name="sz-106" id="sz-106-42">
+    <input type="radio" name="sz-106" id="sz-106-43">
+    <input type="radio" name="sz-106" id="sz-106-44">
+    <input type="radio" name="sz-106" id="sz-106-45">
+    <input type="radio" name="sz-106" id="sz-106-46">
+    <input type="radio" name="g-107" id="g-107-1" checked>
+    <input type="radio" name="sz-107" id="sz-107-39">
+    <input type="radio" name="sz-107" id="sz-107-40" checked>
+    <input type="radio" name="sz-107" id="sz-107-41">
+    <input type="radio" name="sz-107" id="sz-107-42">
+    <input type="radio" name="sz-107" id="sz-107-43">
+    <input type="radio" name="sz-107" id="sz-107-44">
+    <input type="radio" name="sz-107" id="sz-107-45">
+    <input type="radio" name="sz-107" id="sz-107-46">
+    <input type="radio" name="g-108" id="g-108-1" checked>
+    <input type="radio" name="sz-108" id="sz-108-39">
+    <input type="radio" name="sz-108" id="sz-108-40" checked>
+    <input type="radio" name="sz-108" id="sz-108-41">
+    <input type="radio" name="sz-108" id="sz-108-42">
+    <input type="radio" name="sz-108" id="sz-108-43">
+    <input type="radio" name="sz-108" id="sz-108-44">
+    <input type="radio" name="sz-108" id="sz-108-45">
+    <input type="radio" name="sz-108" id="sz-108-46">
+    <input type="radio" name="g-109" id="g-109-1" checked>
+    <input type="radio" name="sz-109" id="sz-109-39">
+    <input type="radio" name="sz-109" id="sz-109-40" checked>
+    <input type="radio" name="sz-109" id="sz-109-41">
+    <input type="radio" name="sz-109" id="sz-109-42">
+    <input type="radio" name="sz-109" id="sz-109-43">
+    <input type="radio" name="sz-109" id="sz-109-44">
+    <input type="radio" name="sz-109" id="sz-109-45">
+    <input type="radio" name="sz-109" id="sz-109-46">
+    <input type="checkbox" id="feedback-toggle">
+
+    <header class="site-header">
+        <nav class="header-nav">
+            <a href="index.html#brands">Бренды</a>
+            <a href="accessories.html">Аксессуары</a>
+            <a href="index.html#gallery">Галерея</a>
+            <a href="index.html#order">Заказ</a>
+            <a href="index.html#contacts">Контакты</a>
+        </nav>
+        <a href="index.html" class="header-logo"><img src="sweetdreamsshop.jpg" alt="Sweet Dreams Shop"></a>
+        <div class="header-cart">
+            <label for="cart-drawer-toggle" style="cursor:pointer; display:block; height:100%;">
+                <svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                <div class="cart-badge"></div>
+            </label>
+        </div>
+    </header>
+
+    <label for="cart-drawer-toggle" class="cart-overlay"></label>
+
+    <aside class="cart-sidebar">
+        <div class="cart-header"><h2>YOUR CART</h2><label for="cart-drawer-toggle" class="close-cart">&times;</label></div>
+        <div class="cart-empty">Ваша корзина пуста</div>
+        <div class="cart-item-display ci-101"><div class="acart-thumb" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S57WU0132_P9616_H1137_F.jpg')"></div><div class="cart-item-info"><h4>Tabi Ankle Boot</h4><div class="p-cat">Maison Margiela</div><div class="cart-price">$1,750</div></div><label for="acc-item-101" class="remove-label">Удалить</label></div><div class="cart-item-display ci-102"><div class="acart-thumb" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S97WU0100_P0410_T8013_F.jpg')"></div><div class="cart-item-info"><h4>Float Ankle Boots Patent</h4><div class="p-cat">Maison Margiela</div><div class="cart-price">$1,790</div></div><label for="acc-item-102" class="remove-label">Удалить</label></div><div class="cart-item-display ci-103"><div class="acart-thumb" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S97WU0100_P7880_HA247_F.jpg')"></div><div class="cart-item-info"><h4>Float Ankle Boots Bleached</h4><div class="p-cat">Maison Margiela</div><div class="cart-price">$1,850</div></div><label for="acc-item-103" class="remove-label">Удалить</label></div><div class="cart-item-display ci-104"><div class="acart-thumb" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S57WU0301_P7789_T2335_F.jpg')"></div><div class="cart-item-info"><h4>Heel-less Western Ankle Boots Flames</h4><div class="p-cat">Maison Margiela</div><div class="cart-price">$2,290</div></div><label for="acc-item-104" class="remove-label">Удалить</label></div><div class="cart-item-display ci-105"><div class="acart-thumb" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S97WU0080_P7678_T2285_F.jpg')"></div><div class="cart-item-info"><h4>Heel-less Western Chelsea Boots</h4><div class="p-cat">Maison Margiela</div><div class="cart-price">$1,990</div></div><label for="acc-item-105" class="remove-label">Удалить</label></div><div class="cart-item-display ci-106"><div class="acart-thumb" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S97WW0065_P7677_T8013_F.jpg')"></div><div class="cart-item-info"><h4>Heel-less Western Boots</h4><div class="p-cat">Maison Margiela</div><div class="cart-price">$2,490</div></div><label for="acc-item-106" class="remove-label">Удалить</label></div><div class="cart-item-display ci-107"><div class="acart-thumb" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S57WU0132_PR058_T8013_F.jpg')"></div><div class="cart-item-info"><h4>Tabi Ankle Boots</h4><div class="p-cat">Maison Margiela</div><div class="cart-price">$1,550</div></div><label for="acc-item-107" class="remove-label">Удалить</label></div><div class="cart-item-display ci-108"><div class="acart-thumb" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S57WU0275_P3827_H8396_F.jpg')"></div><div class="cart-item-info"><h4>Tabi Chelsea Boot</h4><div class="p-cat">Maison Margiela</div><div class="cart-price">$1,750</div></div><label for="acc-item-108" class="remove-label">Удалить</label></div><div class="cart-item-display ci-109"><div class="acart-thumb" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S37WU0431_P5016_T9002_F.jpg')"></div><div class="cart-item-info"><h4>Tabi Broken Mirror Boots</h4><div class="p-cat">Maison Margiela</div><div class="cart-price">$1,690</div></div><label for="acc-item-109" class="remove-label">Удалить</label></div>
+    </aside>
+
+    <main class="acc-wrap" id="catalog">
+        <div class="acc-title"><h1>Maison Margiela</h1><p>Tabi, Float и Heel-less Western: ботинки из официальной коллекции дома</p></div>
+        <section class="brand-panel panel-mg">
+            <div class="acc-grid">
+            <article class="p-card">
+                <a href="#am-101" class="p-img ic-boot" data-name="Tabi Ankle Boot"><span class="i i1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S57WU0132_P9616_H1137_F.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-101" class="p-title">Tabi Ankle Boot</a><div class="p-cat">Ботинки · арт. S57WU0132P9616H1137</div></div>
+                <div class="p-row"><span class="p-price">$1,750</span><label for="acc-item-101" class="p-add"></label></div>
+            </article><article class="p-card">
+                <a href="#am-102" class="p-img ic-boot" data-name="Float Ankle Boots Patent"><span class="i i1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S97WU0100_P0410_T8013_F.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-102" class="p-title">Float Ankle Boots Patent</a><div class="p-cat">Ботинки · арт. S97WU0100P0410T8013</div></div>
+                <div class="p-row"><span class="p-price">$1,790</span><label for="acc-item-102" class="p-add"></label></div>
+            </article><article class="p-card">
+                <a href="#am-103" class="p-img ic-boot" data-name="Float Ankle Boots Bleached"><span class="i i1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S97WU0100_P7880_HA247_F.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-103" class="p-title">Float Ankle Boots Bleached</a><div class="p-cat">Ботинки · арт. S97WU0100P7880HA247</div></div>
+                <div class="p-row"><span class="p-price">$1,850</span><label for="acc-item-103" class="p-add"></label></div>
+            </article><article class="p-card">
+                <a href="#am-104" class="p-img ic-boot" data-name="Heel-less Western Ankle Boots Flames"><span class="i i1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S57WU0301_P7789_T2335_F.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-104" class="p-title">Heel-less Western Ankle Boots Flames</a><div class="p-cat">Ботинки · арт. S57WU0301P7789T2335</div></div>
+                <div class="p-row"><span class="p-price">$2,290</span><label for="acc-item-104" class="p-add"></label></div>
+            </article><article class="p-card">
+                <a href="#am-105" class="p-img ic-boot" data-name="Heel-less Western Chelsea Boots"><span class="i i1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S97WU0080_P7678_T2285_F.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-105" class="p-title">Heel-less Western Chelsea Boots</a><div class="p-cat">Ботинки · арт. S97WU0080P7678T2285</div></div>
+                <div class="p-row"><span class="p-price">$1,990</span><label for="acc-item-105" class="p-add"></label></div>
+            </article><article class="p-card">
+                <a href="#am-106" class="p-img ic-boot" data-name="Heel-less Western Boots"><span class="i i1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S97WW0065_P7677_T8013_F.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-106" class="p-title">Heel-less Western Boots</a><div class="p-cat">Ботинки · арт. S97WW0065P7677T8013</div></div>
+                <div class="p-row"><span class="p-price">$2,490</span><label for="acc-item-106" class="p-add"></label></div>
+            </article><article class="p-card">
+                <a href="#am-107" class="p-img ic-boot" data-name="Tabi Ankle Boots"><span class="i i1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S57WU0132_PR058_T8013_F.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-107" class="p-title">Tabi Ankle Boots</a><div class="p-cat">Ботинки · арт. S57WU0132PR058T8013</div></div>
+                <div class="p-row"><span class="p-price">$1,550</span><label for="acc-item-107" class="p-add"></label></div>
+            </article><article class="p-card">
+                <a href="#am-108" class="p-img ic-boot" data-name="Tabi Chelsea Boot"><span class="i i1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S57WU0275_P3827_H8396_F.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-108" class="p-title">Tabi Chelsea Boot</a><div class="p-cat">Ботинки · арт. S57WU0275P3827H8396</div></div>
+                <div class="p-row"><span class="p-price">$1,750</span><label for="acc-item-108" class="p-add"></label></div>
+            </article><article class="p-card">
+                <a href="#am-109" class="p-img ic-boot" data-name="Tabi Broken Mirror Boots"><span class="i i1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S37WU0431_P5016_T9002_F.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-109" class="p-title">Tabi Broken Mirror Boots</a><div class="p-cat">Ботинки · арт. S37WU0431P5016T9002</div></div>
+                <div class="p-row"><span class="p-price">$1,690</span><label for="acc-item-109" class="p-add"></label></div>
+            </article>
+            </div>
+        </section>
+    </main>
+
+    <div class="modals">
+        <div id="am-101" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-boot"><span class="gi gi-1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S57WU0132_P9616_H1137_F.jpg')"></span></div></div>
+            <div class="am-right">
+                <div class="am-brand">Maison Margiela</div>
+                <h3 class="am-title">Tabi Ankle Boot</h3>
+                <div class="am-price">$1,750</div>
+                <div class="section-label">РАЗМЕР (EU)</div>
+                <div class="size-container"><label for="sz-101-39" class="size-box sz-39">39</label><label for="sz-101-40" class="size-box sz-40">40</label><label for="sz-101-41" class="size-box sz-41">41</label><label for="sz-101-42" class="size-box sz-42">42</label><label for="sz-101-43" class="size-box sz-43">43</label><label for="sz-101-44" class="size-box sz-44">44</label><label for="sz-101-45" class="size-box sz-45">45</label><label for="sz-101-46" class="size-box sz-46">46</label></div>
+                <div class="am-spec"><div><span>Артикул</span>S57WU0132P9616H1137</div></div>
+                <p class="am-desc">Ботинок Tabi с вязаным trompe-l’œil: выглядит как шерстяной трикотаж, но это замша с цифровым принтом. Фирменная белая строчка сзади. <a href="https://www.maisonmargiela.com/wx/tabi-ankle-boot-S57WU0132P9616H1137.html" target="_blank" style="color:#fff;border-bottom:1px solid #555">Страница на официальном сайте</a></p>
+                <label for="acc-item-101" class="p-add m-add"></label>
+            </div></div></div><div id="am-102" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-boot"><span class="gi gi-1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S97WU0100_P0410_T8013_F.jpg')"></span></div></div>
+            <div class="am-right">
+                <div class="am-brand">Maison Margiela</div>
+                <h3 class="am-title">Float Ankle Boots Patent</h3>
+                <div class="am-price">$1,790</div>
+                <div class="section-label">РАЗМЕР (EU)</div>
+                <div class="size-container"><label for="sz-102-39" class="size-box sz-39">39</label><label for="sz-102-40" class="size-box sz-40">40</label><label for="sz-102-41" class="size-box sz-41">41</label><label for="sz-102-42" class="size-box sz-42">42</label><label for="sz-102-43" class="size-box sz-43">43</label><label for="sz-102-44" class="size-box sz-44">44</label><label for="sz-102-45" class="size-box sz-45">45</label><label for="sz-102-46" class="size-box sz-46">46</label></div>
+                <div class="am-spec"><div><span>Артикул</span>S97WU0100P0410T8013</div></div>
+                <p class="am-desc">Ботильоны Float из лаковой кожи. Линия Float в официальной коллекции Maison Margiela. <a href="https://www.maisonmargiela.com/wx/float-ankle-boots-patent-S97WU0100P0410T8013.html" target="_blank" style="color:#fff;border-bottom:1px solid #555">Страница на официальном сайте</a></p>
+                <label for="acc-item-102" class="p-add m-add"></label>
+            </div></div></div><div id="am-103" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-boot"><span class="gi gi-1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S97WU0100_P7880_HA247_F.jpg')"></span></div></div>
+            <div class="am-right">
+                <div class="am-brand">Maison Margiela</div>
+                <h3 class="am-title">Float Ankle Boots Bleached</h3>
+                <div class="am-price">$1,850</div>
+                <div class="section-label">РАЗМЕР (EU)</div>
+                <div class="size-container"><label for="sz-103-39" class="size-box sz-39">39</label><label for="sz-103-40" class="size-box sz-40">40</label><label for="sz-103-41" class="size-box sz-41">41</label><label for="sz-103-42" class="size-box sz-42">42</label><label for="sz-103-43" class="size-box sz-43">43</label><label for="sz-103-44" class="size-box sz-44">44</label><label for="sz-103-45" class="size-box sz-45">45</label><label for="sz-103-46" class="size-box sz-46">46</label></div>
+                <div class="am-spec"><div><span>Артикул</span>S97WU0100P7880HA247</div></div>
+                <p class="am-desc">Ботильоны Float в отбеленной отделке. Линия Float в официальной коллекции Maison Margiela. <a href="https://www.maisonmargiela.com/wx/float-ankle-boots-bleached-S97WU0100P7880HA247.html" target="_blank" style="color:#fff;border-bottom:1px solid #555">Страница на официальном сайте</a></p>
+                <label for="acc-item-103" class="p-add m-add"></label>
+            </div></div></div><div id="am-104" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-boot"><span class="gi gi-1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S57WU0301_P7789_T2335_F.jpg')"></span></div></div>
+            <div class="am-right">
+                <div class="am-brand">Maison Margiela</div>
+                <h3 class="am-title">Heel-less Western Ankle Boots Flames</h3>
+                <div class="am-price">$2,290</div>
+                <div class="section-label">РАЗМЕР (EU)</div>
+                <div class="size-container"><label for="sz-104-39" class="size-box sz-39">39</label><label for="sz-104-40" class="size-box sz-40">40</label><label for="sz-104-41" class="size-box sz-41">41</label><label for="sz-104-42" class="size-box sz-42">42</label><label for="sz-104-43" class="size-box sz-43">43</label><label for="sz-104-44" class="size-box sz-44">44</label><label for="sz-104-45" class="size-box sz-45">45</label><label for="sz-104-46" class="size-box sz-46">46</label></div>
+                <div class="am-spec"><div><span>Артикул</span>S57WU0301P7789T2335</div></div>
+                <p class="am-desc">Ботильоны Heel-less Western с принтом пламени. Силуэт без каблука, вестерн-крой. <a href="https://www.maisonmargiela.com/wx/heel-less-western-ankle-boots-flames-S57WU0301P7789T2335.html" target="_blank" style="color:#fff;border-bottom:1px solid #555">Страница на официальном сайте</a></p>
+                <label for="acc-item-104" class="p-add m-add"></label>
+            </div></div></div><div id="am-105" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-boot"><span class="gi gi-1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S97WU0080_P7678_T2285_F.jpg')"></span></div></div>
+            <div class="am-right">
+                <div class="am-brand">Maison Margiela</div>
+                <h3 class="am-title">Heel-less Western Chelsea Boots</h3>
+                <div class="am-price">$1,990</div>
+                <div class="section-label">РАЗМЕР (EU)</div>
+                <div class="size-container"><label for="sz-105-39" class="size-box sz-39">39</label><label for="sz-105-40" class="size-box sz-40">40</label><label for="sz-105-41" class="size-box sz-41">41</label><label for="sz-105-42" class="size-box sz-42">42</label><label for="sz-105-43" class="size-box sz-43">43</label><label for="sz-105-44" class="size-box sz-44">44</label><label for="sz-105-45" class="size-box sz-45">45</label><label for="sz-105-46" class="size-box sz-46">46</label></div>
+                <div class="am-spec"><div><span>Артикул</span>S97WU0080P7678T2285</div></div>
+                <p class="am-desc">Челси Heel-less Western: ковбойский силуэт без каблука в формате челси. <a href="https://www.maisonmargiela.com/wx/heel-less-western-chelsea-boots-S97WU0080P7678T2285.html" target="_blank" style="color:#fff;border-bottom:1px solid #555">Страница на официальном сайте</a></p>
+                <label for="acc-item-105" class="p-add m-add"></label>
+            </div></div></div><div id="am-106" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-boot"><span class="gi gi-1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S97WW0065_P7677_T8013_F.jpg')"></span></div></div>
+            <div class="am-right">
+                <div class="am-brand">Maison Margiela</div>
+                <h3 class="am-title">Heel-less Western Boots</h3>
+                <div class="am-price">$2,490</div>
+                <div class="section-label">РАЗМЕР (EU)</div>
+                <div class="size-container"><label for="sz-106-39" class="size-box sz-39">39</label><label for="sz-106-40" class="size-box sz-40">40</label><label for="sz-106-41" class="size-box sz-41">41</label><label for="sz-106-42" class="size-box sz-42">42</label><label for="sz-106-43" class="size-box sz-43">43</label><label for="sz-106-44" class="size-box sz-44">44</label><label for="sz-106-45" class="size-box sz-45">45</label><label for="sz-106-46" class="size-box sz-46">46</label></div>
+                <div class="am-spec"><div><span>Артикул</span>S97WW0065P7677T8013</div></div>
+                <p class="am-desc">Сапоги Heel-less Western. Вестерн-силуэт без каблука из официальной мужской коллекции. <a href="https://www.maisonmargiela.com/wx/heel-less-western-boots-S97WW0065P7677T8013.html" target="_blank" style="color:#fff;border-bottom:1px solid #555">Страница на официальном сайте</a></p>
+                <label for="acc-item-106" class="p-add m-add"></label>
+            </div></div></div><div id="am-107" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-boot"><span class="gi gi-1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S57WU0132_PR058_T8013_F.jpg')"></span></div></div>
+            <div class="am-right">
+                <div class="am-brand">Maison Margiela</div>
+                <h3 class="am-title">Tabi Ankle Boots</h3>
+                <div class="am-price">$1,550</div>
+                <div class="section-label">РАЗМЕР (EU)</div>
+                <div class="size-container"><label for="sz-107-39" class="size-box sz-39">39</label><label for="sz-107-40" class="size-box sz-40">40</label><label for="sz-107-41" class="size-box sz-41">41</label><label for="sz-107-42" class="size-box sz-42">42</label><label for="sz-107-43" class="size-box sz-43">43</label><label for="sz-107-44" class="size-box sz-44">44</label><label for="sz-107-45" class="size-box sz-45">45</label><label for="sz-107-46" class="size-box sz-46">46</label></div>
+                <div class="am-spec"><div><span>Артикул</span>S57WU0132PR058T8013</div></div>
+                <p class="am-desc">Классические ботинки Tabi с раздвоенным мысом, отсылка к японским носкам таби. Модель из коллекции с 1989 года. <a href="https://www.maisonmargiela.com/wx/tabi-ankle-boots-S57WU0132PR058T8013.html" target="_blank" style="color:#fff;border-bottom:1px solid #555">Страница на официальном сайте</a></p>
+                <label for="acc-item-107" class="p-add m-add"></label>
+            </div></div></div><div id="am-108" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-boot"><span class="gi gi-1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S57WU0275_P3827_H8396_F.jpg')"></span></div></div>
+            <div class="am-right">
+                <div class="am-brand">Maison Margiela</div>
+                <h3 class="am-title">Tabi Chelsea Boot</h3>
+                <div class="am-price">$1,750</div>
+                <div class="section-label">РАЗМЕР (EU)</div>
+                <div class="size-container"><label for="sz-108-39" class="size-box sz-39">39</label><label for="sz-108-40" class="size-box sz-40">40</label><label for="sz-108-41" class="size-box sz-41">41</label><label for="sz-108-42" class="size-box sz-42">42</label><label for="sz-108-43" class="size-box sz-43">43</label><label for="sz-108-44" class="size-box sz-44">44</label><label for="sz-108-45" class="size-box sz-45">45</label><label for="sz-108-46" class="size-box sz-46">46</label></div>
+                <div class="am-spec"><div><span>Артикул</span>S57WU0275P3827H8396</div></div>
+                <p class="am-desc">Челси Tabi: раздвоенный мыс в формате классического челси. <a href="https://www.maisonmargiela.com/wx/tabi-chelsea-boot-S57WU0275P3827H8396.html" target="_blank" style="color:#fff;border-bottom:1px solid #555">Страница на официальном сайте</a></p>
+                <label for="acc-item-108" class="p-add m-add"></label>
+            </div></div></div><div id="am-109" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-boot"><span class="gi gi-1" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S37WU0431_P5016_T9002_F.jpg')"></span></div></div>
+            <div class="am-right">
+                <div class="am-brand">Maison Margiela</div>
+                <h3 class="am-title">Tabi Broken Mirror Boots</h3>
+                <div class="am-price">$1,690</div>
+                <div class="section-label">РАЗМЕР (EU)</div>
+                <div class="size-container"><label for="sz-109-39" class="size-box sz-39">39</label><label for="sz-109-40" class="size-box sz-40">40</label><label for="sz-109-41" class="size-box sz-41">41</label><label for="sz-109-42" class="size-box sz-42">42</label><label for="sz-109-43" class="size-box sz-43">43</label><label for="sz-109-44" class="size-box sz-44">44</label><label for="sz-109-45" class="size-box sz-45">45</label><label for="sz-109-46" class="size-box sz-46">46</label></div>
+                <div class="am-spec"><div><span>Артикул</span>S37WU0431P5016T9002</div></div>
+                <p class="am-desc">Ботинки Tabi с эффектом разбитого зеркала. <a href="https://www.maisonmargiela.com/wx/tabi-broken-mirror-boots-S37WU0431P5016T9002.html" target="_blank" style="color:#fff;border-bottom:1px solid #555">Страница на официальном сайте</a></p>
+                <label for="acc-item-109" class="p-add m-add"></label>
+            </div></div></div>
+    </div>
+
+    <div class="toast-container"><div class="toast toast-a101">Tabi Ankle Boot: в корзине</div><div class="toast toast-a102">Float Ankle Boots Patent: в корзине</div><div class="toast toast-a103">Float Ankle Boots Bleached: в корзине</div><div class="toast toast-a104">Heel-less Western Ankle Boots Flames: в корзине</div><div class="toast toast-a105">Heel-less Western Chelsea Boots: в корзине</div><div class="toast toast-a106">Heel-less Western Boots: в корзине</div><div class="toast toast-a107">Tabi Ankle Boots: в корзине</div><div class="toast toast-a108">Tabi Chelsea Boot: в корзине</div><div class="toast toast-a109">Tabi Broken Mirror Boots: в корзине</div></div>
+
+    <div class="feedback-modal">
+        <div class="feedback-content">
+            <label for="feedback-toggle" class="close-feedback">&times;</label>
+            <h2 style="margin-top:0; color:#fff;">ОБРАТНАЯ СВЯЗЬ</h2>
+            <p style="color:#888; font-size:13px; margin-bottom:20px;">Напишите нам напрямую на<br><b style="color:#fff;">swdreamsshop@gmail.com</b></p>
+            <input type="text" class="feedback-input" placeholder="Ваш Email">
+            <textarea class="feedback-textarea" placeholder="Ваш вопрос..."></textarea>
+            <label for="feedback-toggle" class="feedback-submit">Отправить</label>
+        </div>
+    </div>
+
+    <footer class="footer-wrap">
+        <div class="footer-left">
+            <img src="image_338baf.png" alt="О нас">
+            <div class="about-box">
+                <h3>О нас</h3>
+                <p>Sweet Dreams Shop — концептуальный бутик премиальной и редкой обуви. Основан в 2018 году. Наш флагманский магазин находится по адресу: г. Москва, Столешников переулок, д. 7.</p>
+            </div>
+        </div>
+        <div class="footer-center">© SWDREAMS, 2026</div>
+        <label for="feedback-toggle" class="footer-right">ОБРАТНАЯ СВЯЗЬ</label>
+    </footer>
+</body>
+</html>

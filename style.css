@@ -28,7 +28,7 @@ input[type="radio"],input[type="checkbox"]{position:absolute;opacity:0;filter:al
 .brand-card{float:left;width:320px;height:450px;margin:0 40px;background-color:#1a1a1a;-webkit-border-radius:20px;border-radius:20px;text-align:center;border:2px solid #1a1a1a;-webkit-box-shadow:0 10px 30px rgba(0,0,0,0.5);box-shadow:0 10px 30px rgba(0,0,0,0.5);-webkit-transition:.4s;transition:.4s}
 .brand-card:hover{border-color:#555;background-color:#222;-webkit-transform:scale(1.05);transform:scale(1.05)}
 .brand-logo{font-size:45px;font-weight:bold;margin-top:170px;margin-bottom:20px}
-.nike-logo{color:#fff}.erd-logo{color:#8b0000}.balenciaga-logo{font-size:36px;letter-spacing:1px}
+.margiela-logo{color:#fff}.erd-logo{color:#8b0000}.balenciaga-logo{font-size:36px;letter-spacing:1px}
 .view-text{font-size:14px;color:#888;text-transform:uppercase;letter-spacing:2px}
 .brand-card:hover .view-text{color:#fff}
 
@@ -113,3 +113,505 @@ input[type="radio"],input[type="checkbox"]{position:absolute;opacity:0;filter:al
 #cart-item-1:checked~.toast-container .toast-1,#cart-item-2:checked~.toast-container .toast-2,#cart-item-3:checked~.toast-container .toast-3,#cart-item-4:checked~.toast-container .toast-4,#cart-item-5:checked~.toast-container .toast-5,#cart-item-6:checked~.toast-container .toast-6,#cart-item-7:checked~.toast-container .toast-7,#cart-item-8:checked~.toast-container .toast-8,#cart-item-9:checked~.toast-container .toast-9{display:block;-webkit-animation:showToast 3s forwards;animation:showToast 3s forwards}
 #cart-item-1:checked~.modal-overlay #btn-1,#cart-item-2:checked~.modal-overlay #btn-2,#cart-item-3:checked~.modal-overlay #btn-3,#cart-item-4:checked~.modal-overlay #btn-4,#cart-item-5:checked~.modal-overlay #btn-5,#cart-item-6:checked~.modal-overlay #btn-6,#cart-item-7:checked~.modal-overlay #btn-7,#cart-item-8:checked~.modal-overlay #btn-8,#cart-item-9:checked~.modal-overlay #btn-9{background-color:#27ae60;color:#fff}
 #cart-item-1:checked~.modal-overlay #btn-1::before,#cart-item-2:checked~.modal-overlay #btn-2::before,#cart-item-3:checked~.modal-overlay #btn-3::before,#cart-item-4:checked~.modal-overlay #btn-4::before,#cart-item-5:checked~.modal-overlay #btn-5::before,#cart-item-6:checked~.modal-overlay #btn-6::before,#cart-item-7:checked~.modal-overlay #btn-7::before,#cart-item-8:checked~.modal-overlay #btn-8::before,#cart-item-9:checked~.modal-overlay #btn-9::before{content:"ADDED!"}
+
+
+/* ================= ДОПОЛНЕНИЯ ПОД ТРЕБОВАНИЯ ПРОЕКТА ================= */
+
+/* Плавная прокрутка к разделам и отступ под фиксированную шапку */
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+
+/* Главное меню в шапке (якорные ссылки) */
+.header-nav{position:absolute;left:40px;top:0;height:75px;line-height:75px}
+.header-nav a{display:inline-block;margin-right:18px;font-size:11px;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase;color:#888;-webkit-transition:.3s;transition:.3s}
+.header-nav a:hover{color:#fff}
+@media (max-width:1180px){.header-nav{top:75px;left:0;width:100%;height:36px;line-height:36px;text-align:center;background-color:#111;border-bottom:1px solid #333}.header-nav a{margin:0 10px}}
+
+/* Общие стили разделов */
+.section{width:1200px;margin:0 auto;padding-top:110px}
+.section-title{text-align:center;font-size:28px;letter-spacing:4px;text-transform:uppercase;margin:0 0 10px}
+.section-sub{text-align:center;color:#888;font-size:14px;margin:0 0 50px}
+.page-end{height:120px}
+
+/* Разделитель: бегущая строка */
+.ticker{margin-top:100px;overflow:hidden;white-space:nowrap;background-color:#161616;border-top:1px solid #333;border-bottom:1px solid #333}
+.ticker-track{display:inline-block;padding:18px 0;-webkit-animation:ticker 30s linear infinite;animation:ticker 30s linear infinite}
+.ticker-track span{display:inline-block;margin:0 25px;font-size:13px;font-weight:bold;letter-spacing:4px;color:#888}
+.ticker-track .dot{color:#cc0000;margin:0}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@-webkit-keyframes ticker{from{-webkit-transform:translateX(0)}to{-webkit-transform:translateX(-50%)}}
+
+/* Преимущества */
+.adv-grid{display:flex;justify-content:space-between}
+.adv-card{width:280px;box-sizing:border-box;padding:30px;background-color:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px;-webkit-transition:.3s;transition:.3s}
+.adv-card:hover{border-color:#444;background-color:#222;-webkit-transform:translateY(-5px);transform:translateY(-5px)}
+.adv-num{font-size:34px;font-weight:bold;color:#cc0000;margin-bottom:15px}
+.adv-card h3{margin:0 0 10px;font-size:16px;text-transform:uppercase}
+.adv-card p{margin:0;font-size:13px;line-height:150%;color:#888}
+
+/* Галерея */
+.gallery-grid{display:flex;flex-wrap:wrap;justify-content:space-between}
+.gallery-item{position:relative;display:block;width:380px;height:280px;margin-bottom:30px;overflow:hidden;background-color:#fff;border-radius:12px}
+.gallery-item img{position:absolute;top:5%;left:5%;width:90%;height:90%;object-fit:contain;mix-blend-mode:multiply;-webkit-transition:.5s;transition:.5s}
+.gallery-item:hover img{-webkit-transform:scale(1.1);transform:scale(1.1)}
+.gallery-item span{position:absolute;left:0;bottom:0;width:100%;box-sizing:border-box;padding:14px 20px;background-color:rgba(17,17,17,0.9);color:#fff;font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;-webkit-transform:translateY(100%);transform:translateY(100%);-webkit-transition:.3s;transition:.3s}
+.gallery-item:hover span{-webkit-transform:translateY(0);transform:translateY(0)}
+
+/* Этапы */
+.steps{display:flex;justify-content:space-between}
+.step{width:270px;text-align:center}
+.step-num{width:60px;height:60px;margin:0 auto 20px;line-height:56px;font-size:24px;font-weight:bold;border:2px solid #cc0000;border-radius:50%;color:#fff}
+.step h3{margin:0 0 10px;font-size:16px;text-transform:uppercase}
+.step p{margin:0;font-size:13px;line-height:150%;color:#888}
+
+/* Команда */
+.team-grid{display:flex;justify-content:center}
+.team-card{width:280px;margin:0 20px;padding:35px 20px;box-sizing:border-box;text-align:center;background-color:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px}
+.team-avatar{width:100px;height:100px;margin:0 auto 20px;line-height:100px;font-size:30px;font-weight:bold;color:#fff;background-color:#252525;border:2px solid #444;border-radius:50%}
+.team-card h3{margin:0 0 6px;font-size:17px}
+.team-role{font-size:13px;color:#888}
+
+/* Форма заказа */
+.order-form{width:520px;margin:0 auto;padding:40px;box-sizing:content-box;background-color:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px}
+.form-field{display:block;width:100%;box-sizing:border-box;margin-bottom:15px;padding:12px;background-color:#111;border:1px solid #333;border-radius:6px;color:#fff;font-size:14px;font-family:Arial,Helvetica,sans-serif}
+.form-field:focus{outline:none;border-color:#888}
+.form-area{height:100px;resize:none}
+.form-submit{display:block;width:100%;padding:14px;background-color:#fff;color:#000;border:none;border-radius:6px;font-size:14px;font-weight:bold;text-transform:uppercase;cursor:pointer;-webkit-transition:.3s;transition:.3s}
+.form-submit:hover{background-color:#cc0000;color:#fff}
+
+/* Контакты и карта */
+.contacts-wrap{display:flex;justify-content:space-between}
+.contacts-info{width:480px}
+.contact-row{margin-bottom:28px;font-size:16px;line-height:150%}
+.contact-row a{color:#fff;border-bottom:1px solid #555}
+.contact-row a:hover{border-bottom-color:#fff}
+.contact-label{margin-bottom:6px;font-size:11px;font-weight:bold;letter-spacing:2px;color:#666}
+.contact-row a.social-btn{display:inline-block;margin:6px 10px 0 0;padding:12px 22px;font-size:13px;font-weight:bold;text-transform:uppercase;border:1px solid #444;border-radius:6px;-webkit-transition:.3s;transition:.3s}
+.contact-row a.social-btn:hover{background-color:#fff;color:#000;border-color:#fff}
+.contacts-map{width:660px;height:400px;overflow:hidden;border:1px solid #333;border-radius:12px}
+.contacts-map iframe{width:100%;height:100%;border:0;-webkit-filter:grayscale(1) invert(0.9) contrast(0.9);filter:grayscale(1) invert(0.9) contrast(0.9)}
+
+
+/* ================= МОДУЛЬ «ПРЕМИУМ-АКСЕССУАРЫ» (accessories.html) ================= */
+.nav-on{color:#fff!important}
+.acc-wrap{width:92%;max-width:1280px;margin:120px auto 0;padding-bottom:140px}
+.acc-title{text-align:center;margin-bottom:30px}
+.acc-title h1{margin:0 0 10px;font-size:30px;letter-spacing:5px;text-transform:uppercase}
+.acc-title p{margin:0;color:#888;font-size:14px}
+.cart-empty{text-align:center;color:#888;margin-top:50px}
+.cart-sidebar h2{margin:0}
+
+/* Панель переключения брендов */
+.tab-bar{display:flex;justify-content:center;flex-wrap:wrap;margin-bottom:40px;border-bottom:1px solid #2a2a2a}
+.tab-label{padding:16px 26px;font-size:13px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;color:#666;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;-webkit-transition:.3s;transition:.3s}
+.tab-label:hover{color:#fff}
+
+/* Брендовые зоны: показываются по выбранной вкладке, переключение без перезагрузки */
+.brand-panel{display:none;padding:10px 0 20px;border-radius:12px}
+@keyframes panelIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.panel-ch{--acc:#A3A3A8;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.022) 0,rgba(255,255,255,.022) 2px,transparent 2px,transparent 5px)}
+.panel-tf{--acc:#0ABAB5}
+.panel-hm{--acc:#C8641E}
+.panel-pp{--acc:#D4D4D8}
+.zone-head{text-align:center;margin-bottom:36px}
+.zone-head h2{margin:0 0 8px;font-size:22px;letter-spacing:4px;text-transform:uppercase;color:var(--acc)}
+.zone-head p{margin:0 auto;max-width:640px;color:#888;font-size:14px;line-height:150%}
+.panel-pp .zone-head{margin-bottom:60px}
+.panel-pp .acc-grid{gap:50px 40px}
+
+/* Сетка карточек: 4 колонки на компьютере, 2 на планшете, 1 на смартфоне */
+.acc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 24px}
+@media (max-width:1023px){.acc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:599px){.acc-grid{grid-template-columns:1fr}.tab-label{padding:12px 14px;font-size:11px}}
+
+/* Карточка товара (FlexBox) */
+.p-card{display:flex;flex-direction:column;background-color:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px;overflow:hidden;-webkit-transition:.3s;transition:.3s}
+.p-card:hover{-webkit-transform:translateY(-5px);transform:translateY(-5px);background-color:#222;border-color:var(--acc)}
+.p-img{position:relative;display:block;height:240px;background-color:#fff;overflow:hidden}
+.p-img::before{content:attr(data-name);position:absolute;left:0;right:0;top:50%;margin-top:-1em;padding:0 16px;text-align:center;font-size:12px;line-height:140%;color:#bbb;letter-spacing:1px;text-transform:uppercase}
+.p-img.noimg{background-color:#161616;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.03) 0,rgba(255,255,255,.03) 1px,transparent 1px,transparent 8px)}
+.p-img.noimg::before{color:#777}
+.p-img .i{position:absolute;left:0;top:0;width:100%;height:100%;background-repeat:no-repeat;background-position:center;-webkit-transition:opacity .4s,transform .4s;transition:opacity .4s,transform .4s}
+.p-img .i1{background-size:contain;-webkit-transform:scale(.88);transform:scale(.88)}
+.p-img .i2{background-size:cover;opacity:0}
+.p-card:hover .i1{-webkit-transform:scale(.94);transform:scale(.94)}
+.p-card:hover .i2{opacity:1}
+.p-meta{flex:1;padding:16px 18px 6px}
+.p-title{display:block;font-size:14px;font-weight:bold;text-transform:uppercase;color:#ddd;line-height:140%;margin-bottom:6px}
+.p-title:hover{color:var(--acc)}
+.p-cat{font-size:12px;color:#777}
+.p-row{display:flex;align-items:center;justify-content:space-between;padding:12px 18px 18px}
+.p-price{font-size:16px;font-weight:bold;color:#fff}
+.p-add{display:block;padding:10px 14px;background-color:#fff;color:#000;border-radius:5px;font-size:0;cursor:pointer;text-align:center;-webkit-transition:.3s;transition:.3s}
+.p-add::before{content:"В КОРЗИНУ";font-size:11px;font-weight:bold;letter-spacing:1px}
+.p-add:hover{background-color:#cc0000;color:#fff}
+.m-add{height:50px;line-height:30px;box-sizing:border-box;margin-top:26px;font-size:0;padding:10px}
+.m-add::before{font-size:14px}
+
+/* Подробная карточка товара (открывается по якорю #am-N) */
+.am-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.88);opacity:0;visibility:hidden;z-index:120;-webkit-transition:.3s;transition:.3s;display:flex;align-items:center;justify-content:center}
+.am-overlay:target{opacity:1;visibility:visible}
+.am-window{position:relative;display:flex;width:1000px;max-width:94vw;max-height:92vh;background-color:#1a1a1a;border:1px solid #333;border-radius:12px;overflow:hidden}
+.am-close{position:absolute;top:12px;right:22px;font-size:34px;color:#666;z-index:5}
+.am-close:hover{color:#fff}
+.am-left{width:55%;background-color:#e8e8e8;display:flex;flex-direction:column}
+.am-stage{position:relative;flex:1;min-height:360px}
+.gi{position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;background-repeat:no-repeat;background-position:center;background-size:contain;-webkit-transition:.3s;transition:.3s}
+.gi-2,.gi-3,.gi-4{background-size:cover}
+.gi-empty{opacity:1;background-color:#161616}
+.gi-empty::before{content:attr(data-name);position:absolute;left:0;right:0;top:50%;margin-top:-1em;text-align:center;color:#777;font-size:14px;letter-spacing:2px;text-transform:uppercase;padding:0 24px}
+.am-thumbs{display:flex;gap:8px;padding:10px;background-color:#d4d4d4}
+.gt{width:64px;height:64px;border:2px solid transparent;border-radius:6px;background-color:#fff;background-size:cover;background-position:center;cursor:pointer;-webkit-transition:.2s;transition:.2s}
+.gt:hover{border-color:#999}
+.am-right{width:45%;box-sizing:border-box;padding:40px;overflow-y:auto}
+.am-brand{font-size:11px;letter-spacing:3px;color:#cc0000;font-weight:bold;text-transform:uppercase;margin-bottom:10px}
+.am-title{margin:0 0 10px;font-size:22px;text-transform:uppercase;line-height:130%}
+.am-price{font-size:20px;font-weight:bold;margin-bottom:20px}
+.am-spec{display:flex;gap:30px;padding:16px 0;border-top:1px solid #333;border-bottom:1px solid #333;font-size:14px}
+.am-spec span{display:block;font-size:11px;color:#666;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.am-desc{font-size:13px;color:#888;line-height:160%;margin:20px 0 0}
+@media (max-width:760px){.am-window{flex-direction:column;overflow-y:auto}.am-left,.am-right{width:100%}.am-stage{min-height:260px;flex:none;height:260px}.am-right{padding:24px;overflow:visible}}
+
+/* Миниатюры в корзине и адаптивная панель корзины */
+.acart-thumb{float:left;width:80px;height:80px;margin-right:15px;background-color:#fff;background-repeat:no-repeat;background-position:center;background-size:contain;border-radius:5px}
+.cart-sidebar .cart-item-info{width:190px}
+@media (max-width:599px){.cart-sidebar{width:100%;right:-100%}.cart-item-info{width:150px}}
+
+#tab-ch:checked~.acc-wrap .lbl-ch{color:#fff;border-bottom-color:#cc0000}
+#tab-ch:checked~.acc-wrap .panel-ch{display:block;-webkit-animation:panelIn .45s ease;animation:panelIn .45s ease}
+#tab-tf:checked~.acc-wrap .lbl-tf{color:#fff;border-bottom-color:#cc0000}
+#tab-tf:checked~.acc-wrap .panel-tf{display:block;-webkit-animation:panelIn .45s ease;animation:panelIn .45s ease}
+#tab-hm:checked~.acc-wrap .lbl-hm{color:#fff;border-bottom-color:#cc0000}
+#tab-hm:checked~.acc-wrap .panel-hm{display:block;-webkit-animation:panelIn .45s ease;animation:panelIn .45s ease}
+#tab-pp:checked~.acc-wrap .lbl-pp{color:#fff;border-bottom-color:#cc0000}
+#tab-pp:checked~.acc-wrap .panel-pp{display:block;-webkit-animation:panelIn .45s ease;animation:panelIn .45s ease}
+#acc-item-1:checked~.site-header .cart-badge,#acc-item-2:checked~.site-header .cart-badge,#acc-item-3:checked~.site-header .cart-badge,#acc-item-4:checked~.site-header .cart-badge,#acc-item-5:checked~.site-header .cart-badge,#acc-item-6:checked~.site-header .cart-badge,#acc-item-7:checked~.site-header .cart-badge,#acc-item-8:checked~.site-header .cart-badge,#acc-item-9:checked~.site-header .cart-badge,#acc-item-10:checked~.site-header .cart-badge,#acc-item-11:checked~.site-header .cart-badge,#acc-item-12:checked~.site-header .cart-badge,#acc-item-13:checked~.site-header .cart-badge,#acc-item-14:checked~.site-header .cart-badge,#acc-item-15:checked~.site-header .cart-badge,#acc-item-16:checked~.site-header .cart-badge,#acc-item-17:checked~.site-header .cart-badge,#acc-item-18:checked~.site-header .cart-badge,#acc-item-19:checked~.site-header .cart-badge,#acc-item-20:checked~.site-header .cart-badge,#acc-item-21:checked~.site-header .cart-badge,#acc-item-22:checked~.site-header .cart-badge,#acc-item-23:checked~.site-header .cart-badge,#acc-item-24:checked~.site-header .cart-badge,#acc-item-25:checked~.site-header .cart-badge,#acc-item-26:checked~.site-header .cart-badge,#acc-item-27:checked~.site-header .cart-badge,#acc-item-28:checked~.site-header .cart-badge{display:block}
+.cart-toggle:checked{counter-increment:cart-counter}
+#acc-item-1:checked~.cart-sidebar .ci-1,#acc-item-2:checked~.cart-sidebar .ci-2,#acc-item-3:checked~.cart-sidebar .ci-3,#acc-item-4:checked~.cart-sidebar .ci-4,#acc-item-5:checked~.cart-sidebar .ci-5,#acc-item-6:checked~.cart-sidebar .ci-6,#acc-item-7:checked~.cart-sidebar .ci-7,#acc-item-8:checked~.cart-sidebar .ci-8,#acc-item-9:checked~.cart-sidebar .ci-9,#acc-item-10:checked~.cart-sidebar .ci-10,#acc-item-11:checked~.cart-sidebar .ci-11,#acc-item-12:checked~.cart-sidebar .ci-12,#acc-item-13:checked~.cart-sidebar .ci-13,#acc-item-14:checked~.cart-sidebar .ci-14,#acc-item-15:checked~.cart-sidebar .ci-15,#acc-item-16:checked~.cart-sidebar .ci-16,#acc-item-17:checked~.cart-sidebar .ci-17,#acc-item-18:checked~.cart-sidebar .ci-18,#acc-item-19:checked~.cart-sidebar .ci-19,#acc-item-20:checked~.cart-sidebar .ci-20,#acc-item-21:checked~.cart-sidebar .ci-21,#acc-item-22:checked~.cart-sidebar .ci-22,#acc-item-23:checked~.cart-sidebar .ci-23,#acc-item-24:checked~.cart-sidebar .ci-24,#acc-item-25:checked~.cart-sidebar .ci-25,#acc-item-26:checked~.cart-sidebar .ci-26,#acc-item-27:checked~.cart-sidebar .ci-27,#acc-item-28:checked~.cart-sidebar .ci-28{display:block}
+#acc-item-1:checked~.toast-container .toast-a1,#acc-item-2:checked~.toast-container .toast-a2,#acc-item-3:checked~.toast-container .toast-a3,#acc-item-4:checked~.toast-container .toast-a4,#acc-item-5:checked~.toast-container .toast-a5,#acc-item-6:checked~.toast-container .toast-a6,#acc-item-7:checked~.toast-container .toast-a7,#acc-item-8:checked~.toast-container .toast-a8,#acc-item-9:checked~.toast-container .toast-a9,#acc-item-10:checked~.toast-container .toast-a10,#acc-item-11:checked~.toast-container .toast-a11,#acc-item-12:checked~.toast-container .toast-a12,#acc-item-13:checked~.toast-container .toast-a13,#acc-item-14:checked~.toast-container .toast-a14,#acc-item-15:checked~.toast-container .toast-a15,#acc-item-16:checked~.toast-container .toast-a16,#acc-item-17:checked~.toast-container .toast-a17,#acc-item-18:checked~.toast-container .toast-a18,#acc-item-19:checked~.toast-container .toast-a19,#acc-item-20:checked~.toast-container .toast-a20,#acc-item-21:checked~.toast-container .toast-a21,#acc-item-22:checked~.toast-container .toast-a22,#acc-item-23:checked~.toast-container .toast-a23,#acc-item-24:checked~.toast-container .toast-a24,#acc-item-25:checked~.toast-container .toast-a25,#acc-item-26:checked~.toast-container .toast-a26,#acc-item-27:checked~.toast-container .toast-a27,#acc-item-28:checked~.toast-container .toast-a28{display:block;-webkit-animation:showToast 3s forwards;animation:showToast 3s forwards}
+#acc-item-1:checked~* label.p-add[for="acc-item-1"],#acc-item-2:checked~* label.p-add[for="acc-item-2"],#acc-item-3:checked~* label.p-add[for="acc-item-3"],#acc-item-4:checked~* label.p-add[for="acc-item-4"],#acc-item-5:checked~* label.p-add[for="acc-item-5"],#acc-item-6:checked~* label.p-add[for="acc-item-6"],#acc-item-7:checked~* label.p-add[for="acc-item-7"],#acc-item-8:checked~* label.p-add[for="acc-item-8"],#acc-item-9:checked~* label.p-add[for="acc-item-9"],#acc-item-10:checked~* label.p-add[for="acc-item-10"],#acc-item-11:checked~* label.p-add[for="acc-item-11"],#acc-item-12:checked~* label.p-add[for="acc-item-12"],#acc-item-13:checked~* label.p-add[for="acc-item-13"],#acc-item-14:checked~* label.p-add[for="acc-item-14"],#acc-item-15:checked~* label.p-add[for="acc-item-15"],#acc-item-16:checked~* label.p-add[for="acc-item-16"],#acc-item-17:checked~* label.p-add[for="acc-item-17"],#acc-item-18:checked~* label.p-add[for="acc-item-18"],#acc-item-19:checked~* label.p-add[for="acc-item-19"],#acc-item-20:checked~* label.p-add[for="acc-item-20"],#acc-item-21:checked~* label.p-add[for="acc-item-21"],#acc-item-22:checked~* label.p-add[for="acc-item-22"],#acc-item-23:checked~* label.p-add[for="acc-item-23"],#acc-item-24:checked~* label.p-add[for="acc-item-24"],#acc-item-25:checked~* label.p-add[for="acc-item-25"],#acc-item-26:checked~* label.p-add[for="acc-item-26"],#acc-item-27:checked~* label.p-add[for="acc-item-27"],#acc-item-28:checked~* label.p-add[for="acc-item-28"]{background-color:#27ae60;color:#fff}
+#acc-item-1:checked~* label.p-add[for="acc-item-1"]::before,#acc-item-2:checked~* label.p-add[for="acc-item-2"]::before,#acc-item-3:checked~* label.p-add[for="acc-item-3"]::before,#acc-item-4:checked~* label.p-add[for="acc-item-4"]::before,#acc-item-5:checked~* label.p-add[for="acc-item-5"]::before,#acc-item-6:checked~* label.p-add[for="acc-item-6"]::before,#acc-item-7:checked~* label.p-add[for="acc-item-7"]::before,#acc-item-8:checked~* label.p-add[for="acc-item-8"]::before,#acc-item-9:checked~* label.p-add[for="acc-item-9"]::before,#acc-item-10:checked~* label.p-add[for="acc-item-10"]::before,#acc-item-11:checked~* label.p-add[for="acc-item-11"]::before,#acc-item-12:checked~* label.p-add[for="acc-item-12"]::before,#acc-item-13:checked~* label.p-add[for="acc-item-13"]::before,#acc-item-14:checked~* label.p-add[for="acc-item-14"]::before,#acc-item-15:checked~* label.p-add[for="acc-item-15"]::before,#acc-item-16:checked~* label.p-add[for="acc-item-16"]::before,#acc-item-17:checked~* label.p-add[for="acc-item-17"]::before,#acc-item-18:checked~* label.p-add[for="acc-item-18"]::before,#acc-item-19:checked~* label.p-add[for="acc-item-19"]::before,#acc-item-20:checked~* label.p-add[for="acc-item-20"]::before,#acc-item-21:checked~* label.p-add[for="acc-item-21"]::before,#acc-item-22:checked~* label.p-add[for="acc-item-22"]::before,#acc-item-23:checked~* label.p-add[for="acc-item-23"]::before,#acc-item-24:checked~* label.p-add[for="acc-item-24"]::before,#acc-item-25:checked~* label.p-add[for="acc-item-25"]::before,#acc-item-26:checked~* label.p-add[for="acc-item-26"]::before,#acc-item-27:checked~* label.p-add[for="acc-item-27"]::before,#acc-item-28:checked~* label.p-add[for="acc-item-28"]::before{content:"✓ В КОРЗИНЕ"}
+#g-1-1:checked~.modals #am-1 .gi-1{opacity:1}
+#g-1-1:checked~.modals #am-1 .gt-1{border-color:#cc0000}
+#g-2-1:checked~.modals #am-2 .gi-1{opacity:1}
+#g-2-1:checked~.modals #am-2 .gt-1{border-color:#cc0000}
+#g-3-1:checked~.modals #am-3 .gi-1{opacity:1}
+#g-3-1:checked~.modals #am-3 .gt-1{border-color:#cc0000}
+#g-4-1:checked~.modals #am-4 .gi-1{opacity:1}
+#g-4-1:checked~.modals #am-4 .gt-1{border-color:#cc0000}
+#g-5-1:checked~.modals #am-5 .gi-1{opacity:1}
+#g-5-1:checked~.modals #am-5 .gt-1{border-color:#cc0000}
+#g-6-1:checked~.modals #am-6 .gi-1{opacity:1}
+#g-6-1:checked~.modals #am-6 .gt-1{border-color:#cc0000}
+#g-7-1:checked~.modals #am-7 .gi-1{opacity:1}
+#g-7-1:checked~.modals #am-7 .gt-1{border-color:#cc0000}
+#g-8-1:checked~.modals #am-8 .gi-1{opacity:1}
+#g-8-1:checked~.modals #am-8 .gt-1{border-color:#cc0000}
+#g-8-2:checked~.modals #am-8 .gi-2{opacity:1}
+#g-8-2:checked~.modals #am-8 .gt-2{border-color:#cc0000}
+#g-8-3:checked~.modals #am-8 .gi-3{opacity:1}
+#g-8-3:checked~.modals #am-8 .gt-3{border-color:#cc0000}
+#g-8-4:checked~.modals #am-8 .gi-4{opacity:1}
+#g-8-4:checked~.modals #am-8 .gt-4{border-color:#cc0000}
+#g-9-1:checked~.modals #am-9 .gi-1{opacity:1}
+#g-9-1:checked~.modals #am-9 .gt-1{border-color:#cc0000}
+#g-9-2:checked~.modals #am-9 .gi-2{opacity:1}
+#g-9-2:checked~.modals #am-9 .gt-2{border-color:#cc0000}
+#g-9-3:checked~.modals #am-9 .gi-3{opacity:1}
+#g-9-3:checked~.modals #am-9 .gt-3{border-color:#cc0000}
+#g-9-4:checked~.modals #am-9 .gi-4{opacity:1}
+#g-9-4:checked~.modals #am-9 .gt-4{border-color:#cc0000}
+#g-10-1:checked~.modals #am-10 .gi-1{opacity:1}
+#g-10-1:checked~.modals #am-10 .gt-1{border-color:#cc0000}
+#g-10-2:checked~.modals #am-10 .gi-2{opacity:1}
+#g-10-2:checked~.modals #am-10 .gt-2{border-color:#cc0000}
+#g-10-3:checked~.modals #am-10 .gi-3{opacity:1}
+#g-10-3:checked~.modals #am-10 .gt-3{border-color:#cc0000}
+#g-10-4:checked~.modals #am-10 .gi-4{opacity:1}
+#g-10-4:checked~.modals #am-10 .gt-4{border-color:#cc0000}
+#g-11-1:checked~.modals #am-11 .gi-1{opacity:1}
+#g-11-1:checked~.modals #am-11 .gt-1{border-color:#cc0000}
+#g-11-2:checked~.modals #am-11 .gi-2{opacity:1}
+#g-11-2:checked~.modals #am-11 .gt-2{border-color:#cc0000}
+#g-11-3:checked~.modals #am-11 .gi-3{opacity:1}
+#g-11-3:checked~.modals #am-11 .gt-3{border-color:#cc0000}
+#g-11-4:checked~.modals #am-11 .gi-4{opacity:1}
+#g-11-4:checked~.modals #am-11 .gt-4{border-color:#cc0000}
+#g-12-1:checked~.modals #am-12 .gi-1{opacity:1}
+#g-12-1:checked~.modals #am-12 .gt-1{border-color:#cc0000}
+#g-12-2:checked~.modals #am-12 .gi-2{opacity:1}
+#g-12-2:checked~.modals #am-12 .gt-2{border-color:#cc0000}
+#g-12-3:checked~.modals #am-12 .gi-3{opacity:1}
+#g-12-3:checked~.modals #am-12 .gt-3{border-color:#cc0000}
+#g-12-4:checked~.modals #am-12 .gi-4{opacity:1}
+#g-12-4:checked~.modals #am-12 .gt-4{border-color:#cc0000}
+#g-13-1:checked~.modals #am-13 .gi-1{opacity:1}
+#g-13-1:checked~.modals #am-13 .gt-1{border-color:#cc0000}
+#g-13-2:checked~.modals #am-13 .gi-2{opacity:1}
+#g-13-2:checked~.modals #am-13 .gt-2{border-color:#cc0000}
+#g-13-3:checked~.modals #am-13 .gi-3{opacity:1}
+#g-13-3:checked~.modals #am-13 .gt-3{border-color:#cc0000}
+#g-13-4:checked~.modals #am-13 .gi-4{opacity:1}
+#g-13-4:checked~.modals #am-13 .gt-4{border-color:#cc0000}
+#g-14-1:checked~.modals #am-14 .gi-1{opacity:1}
+#g-14-1:checked~.modals #am-14 .gt-1{border-color:#cc0000}
+#g-15-1:checked~.modals #am-15 .gi-1{opacity:1}
+#g-15-1:checked~.modals #am-15 .gt-1{border-color:#cc0000}
+#g-16-1:checked~.modals #am-16 .gi-1{opacity:1}
+#g-16-1:checked~.modals #am-16 .gt-1{border-color:#cc0000}
+#g-17-1:checked~.modals #am-17 .gi-1{opacity:1}
+#g-17-1:checked~.modals #am-17 .gt-1{border-color:#cc0000}
+#g-18-1:checked~.modals #am-18 .gi-1{opacity:1}
+#g-18-1:checked~.modals #am-18 .gt-1{border-color:#cc0000}
+#g-19-1:checked~.modals #am-19 .gi-1{opacity:1}
+#g-19-1:checked~.modals #am-19 .gt-1{border-color:#cc0000}
+#g-20-1:checked~.modals #am-20 .gi-1{opacity:1}
+#g-20-1:checked~.modals #am-20 .gt-1{border-color:#cc0000}
+#g-21-1:checked~.modals #am-21 .gi-1{opacity:1}
+#g-21-1:checked~.modals #am-21 .gt-1{border-color:#cc0000}
+#g-21-2:checked~.modals #am-21 .gi-2{opacity:1}
+#g-21-2:checked~.modals #am-21 .gt-2{border-color:#cc0000}
+#g-21-3:checked~.modals #am-21 .gi-3{opacity:1}
+#g-21-3:checked~.modals #am-21 .gt-3{border-color:#cc0000}
+#g-21-4:checked~.modals #am-21 .gi-4{opacity:1}
+#g-21-4:checked~.modals #am-21 .gt-4{border-color:#cc0000}
+#g-22-1:checked~.modals #am-22 .gi-1{opacity:1}
+#g-22-1:checked~.modals #am-22 .gt-1{border-color:#cc0000}
+#g-22-2:checked~.modals #am-22 .gi-2{opacity:1}
+#g-22-2:checked~.modals #am-22 .gt-2{border-color:#cc0000}
+#g-22-3:checked~.modals #am-22 .gi-3{opacity:1}
+#g-22-3:checked~.modals #am-22 .gt-3{border-color:#cc0000}
+#g-23-1:checked~.modals #am-23 .gi-1{opacity:1}
+#g-23-1:checked~.modals #am-23 .gt-1{border-color:#cc0000}
+#g-23-2:checked~.modals #am-23 .gi-2{opacity:1}
+#g-23-2:checked~.modals #am-23 .gt-2{border-color:#cc0000}
+#g-23-3:checked~.modals #am-23 .gi-3{opacity:1}
+#g-23-3:checked~.modals #am-23 .gt-3{border-color:#cc0000}
+#g-24-1:checked~.modals #am-24 .gi-1{opacity:1}
+#g-24-1:checked~.modals #am-24 .gt-1{border-color:#cc0000}
+#g-24-2:checked~.modals #am-24 .gi-2{opacity:1}
+#g-24-2:checked~.modals #am-24 .gt-2{border-color:#cc0000}
+#g-24-3:checked~.modals #am-24 .gi-3{opacity:1}
+#g-24-3:checked~.modals #am-24 .gt-3{border-color:#cc0000}
+#g-25-1:checked~.modals #am-25 .gi-1{opacity:1}
+#g-25-1:checked~.modals #am-25 .gt-1{border-color:#cc0000}
+#g-25-2:checked~.modals #am-25 .gi-2{opacity:1}
+#g-25-2:checked~.modals #am-25 .gt-2{border-color:#cc0000}
+#g-25-3:checked~.modals #am-25 .gi-3{opacity:1}
+#g-25-3:checked~.modals #am-25 .gt-3{border-color:#cc0000}
+#g-26-1:checked~.modals #am-26 .gi-1{opacity:1}
+#g-26-1:checked~.modals #am-26 .gt-1{border-color:#cc0000}
+#g-26-2:checked~.modals #am-26 .gi-2{opacity:1}
+#g-26-2:checked~.modals #am-26 .gt-2{border-color:#cc0000}
+#g-26-3:checked~.modals #am-26 .gi-3{opacity:1}
+#g-26-3:checked~.modals #am-26 .gt-3{border-color:#cc0000}
+#g-27-1:checked~.modals #am-27 .gi-1{opacity:1}
+#g-27-1:checked~.modals #am-27 .gt-1{border-color:#cc0000}
+#g-27-2:checked~.modals #am-27 .gi-2{opacity:1}
+#g-27-2:checked~.modals #am-27 .gt-2{border-color:#cc0000}
+#g-27-3:checked~.modals #am-27 .gi-3{opacity:1}
+#g-27-3:checked~.modals #am-27 .gt-3{border-color:#cc0000}
+#g-28-1:checked~.modals #am-28 .gi-1{opacity:1}
+#g-28-1:checked~.modals #am-28 .gt-1{border-color:#cc0000}
+#g-28-2:checked~.modals #am-28 .gi-2{opacity:1}
+#g-28-2:checked~.modals #am-28 .gt-2{border-color:#cc0000}
+#g-28-3:checked~.modals #am-28 .gi-3{opacity:1}
+#g-28-3:checked~.modals #am-28 .gt-3{border-color:#cc0000}
+
+#acc-item-1:checked~.cart-sidebar .cart-empty,#acc-item-2:checked~.cart-sidebar .cart-empty,#acc-item-3:checked~.cart-sidebar .cart-empty,#acc-item-4:checked~.cart-sidebar .cart-empty,#acc-item-5:checked~.cart-sidebar .cart-empty,#acc-item-6:checked~.cart-sidebar .cart-empty,#acc-item-7:checked~.cart-sidebar .cart-empty,#acc-item-8:checked~.cart-sidebar .cart-empty,#acc-item-9:checked~.cart-sidebar .cart-empty,#acc-item-10:checked~.cart-sidebar .cart-empty,#acc-item-11:checked~.cart-sidebar .cart-empty,#acc-item-12:checked~.cart-sidebar .cart-empty,#acc-item-13:checked~.cart-sidebar .cart-empty,#acc-item-14:checked~.cart-sidebar .cart-empty,#acc-item-15:checked~.cart-sidebar .cart-empty,#acc-item-16:checked~.cart-sidebar .cart-empty,#acc-item-17:checked~.cart-sidebar .cart-empty,#acc-item-18:checked~.cart-sidebar .cart-empty,#acc-item-19:checked~.cart-sidebar .cart-empty,#acc-item-20:checked~.cart-sidebar .cart-empty,#acc-item-21:checked~.cart-sidebar .cart-empty,#acc-item-22:checked~.cart-sidebar .cart-empty,#acc-item-23:checked~.cart-sidebar .cart-empty,#acc-item-24:checked~.cart-sidebar .cart-empty,#acc-item-25:checked~.cart-sidebar .cart-empty,#acc-item-26:checked~.cart-sidebar .cart-empty,#acc-item-27:checked~.cart-sidebar .cart-empty,#acc-item-28:checked~.cart-sidebar .cart-empty{display:none}
+
+/* Баннер перехода в раздел «Аксессуары» на главной */
+.acc-banner{display:block;width:1200px;max-width:92%;box-sizing:border-box;margin:60px auto 0;padding:34px 40px;background-color:#1a1a1a;border:2px solid #1a1a1a;border-radius:20px;text-align:center;-webkit-transition:.4s;transition:.4s}
+.acc-banner:hover{border-color:#cc0000;background-color:#222}
+.acc-banner b{display:block;font-size:26px;letter-spacing:4px;text-transform:uppercase}
+.acc-banner span{display:block;margin-top:10px;font-size:13px;color:#888;letter-spacing:2px;text-transform:uppercase}
+.acc-banner:hover span{color:#fff}
+
+/* ===== Страница Maison Margiela ===== */
+.panel-mg{display:block;--acc:#e8e8e8}
+#acc-item-101:checked~.site-header .cart-badge,#acc-item-102:checked~.site-header .cart-badge,#acc-item-103:checked~.site-header .cart-badge,#acc-item-104:checked~.site-header .cart-badge,#acc-item-105:checked~.site-header .cart-badge,#acc-item-106:checked~.site-header .cart-badge,#acc-item-107:checked~.site-header .cart-badge,#acc-item-108:checked~.site-header .cart-badge,#acc-item-109:checked~.site-header .cart-badge{display:block}
+#acc-item-101:checked~.cart-sidebar .ci-101,#acc-item-102:checked~.cart-sidebar .ci-102,#acc-item-103:checked~.cart-sidebar .ci-103,#acc-item-104:checked~.cart-sidebar .ci-104,#acc-item-105:checked~.cart-sidebar .ci-105,#acc-item-106:checked~.cart-sidebar .ci-106,#acc-item-107:checked~.cart-sidebar .ci-107,#acc-item-108:checked~.cart-sidebar .ci-108,#acc-item-109:checked~.cart-sidebar .ci-109{display:block}
+#acc-item-101:checked~.cart-sidebar .cart-empty,#acc-item-102:checked~.cart-sidebar .cart-empty,#acc-item-103:checked~.cart-sidebar .cart-empty,#acc-item-104:checked~.cart-sidebar .cart-empty,#acc-item-105:checked~.cart-sidebar .cart-empty,#acc-item-106:checked~.cart-sidebar .cart-empty,#acc-item-107:checked~.cart-sidebar .cart-empty,#acc-item-108:checked~.cart-sidebar .cart-empty,#acc-item-109:checked~.cart-sidebar .cart-empty{display:none}
+#acc-item-101:checked~.toast-container .toast-a101,#acc-item-102:checked~.toast-container .toast-a102,#acc-item-103:checked~.toast-container .toast-a103,#acc-item-104:checked~.toast-container .toast-a104,#acc-item-105:checked~.toast-container .toast-a105,#acc-item-106:checked~.toast-container .toast-a106,#acc-item-107:checked~.toast-container .toast-a107,#acc-item-108:checked~.toast-container .toast-a108,#acc-item-109:checked~.toast-container .toast-a109{display:block;-webkit-animation:showToast 3s forwards;animation:showToast 3s forwards}
+#acc-item-101:checked~* label.p-add[for="acc-item-101"],#acc-item-102:checked~* label.p-add[for="acc-item-102"],#acc-item-103:checked~* label.p-add[for="acc-item-103"],#acc-item-104:checked~* label.p-add[for="acc-item-104"],#acc-item-105:checked~* label.p-add[for="acc-item-105"],#acc-item-106:checked~* label.p-add[for="acc-item-106"],#acc-item-107:checked~* label.p-add[for="acc-item-107"],#acc-item-108:checked~* label.p-add[for="acc-item-108"],#acc-item-109:checked~* label.p-add[for="acc-item-109"]{background-color:#27ae60;color:#fff}
+#acc-item-101:checked~* label.p-add[for="acc-item-101"]::before,#acc-item-102:checked~* label.p-add[for="acc-item-102"]::before,#acc-item-103:checked~* label.p-add[for="acc-item-103"]::before,#acc-item-104:checked~* label.p-add[for="acc-item-104"]::before,#acc-item-105:checked~* label.p-add[for="acc-item-105"]::before,#acc-item-106:checked~* label.p-add[for="acc-item-106"]::before,#acc-item-107:checked~* label.p-add[for="acc-item-107"]::before,#acc-item-108:checked~* label.p-add[for="acc-item-108"]::before,#acc-item-109:checked~* label.p-add[for="acc-item-109"]::before{content:"✓ В КОРЗИНЕ"}
+#g-101-1:checked~.modals #am-101 .gi-1,#g-102-1:checked~.modals #am-102 .gi-1,#g-103-1:checked~.modals #am-103 .gi-1,#g-104-1:checked~.modals #am-104 .gi-1,#g-105-1:checked~.modals #am-105 .gi-1,#g-106-1:checked~.modals #am-106 .gi-1,#g-107-1:checked~.modals #am-107 .gi-1,#g-108-1:checked~.modals #am-108 .gi-1,#g-109-1:checked~.modals #am-109 .gi-1{opacity:1}
+#sz-101-39:checked~.modals #am-101 .sz-39{border-color:#fff;color:#fff}
+#sz-101-40:checked~.modals #am-101 .sz-40{border-color:#fff;color:#fff}
+#sz-101-41:checked~.modals #am-101 .sz-41{border-color:#fff;color:#fff}
+#sz-101-42:checked~.modals #am-101 .sz-42{border-color:#fff;color:#fff}
+#sz-101-43:checked~.modals #am-101 .sz-43{border-color:#fff;color:#fff}
+#sz-101-44:checked~.modals #am-101 .sz-44{border-color:#fff;color:#fff}
+#sz-101-45:checked~.modals #am-101 .sz-45{border-color:#fff;color:#fff}
+#sz-101-46:checked~.modals #am-101 .sz-46{border-color:#fff;color:#fff}
+#sz-102-39:checked~.modals #am-102 .sz-39{border-color:#fff;color:#fff}
+#sz-102-40:checked~.modals #am-102 .sz-40{border-color:#fff;color:#fff}
+#sz-102-41:checked~.modals #am-102 .sz-41{border-color:#fff;color:#fff}
+#sz-102-42:checked~.modals #am-102 .sz-42{border-color:#fff;color:#fff}
+#sz-102-43:checked~.modals #am-102 .sz-43{border-color:#fff;color:#fff}
+#sz-102-44:checked~.modals #am-102 .sz-44{border-color:#fff;color:#fff}
+#sz-102-45:checked~.modals #am-102 .sz-45{border-color:#fff;color:#fff}
+#sz-102-46:checked~.modals #am-102 .sz-46{border-color:#fff;color:#fff}
+#sz-103-39:checked~.modals #am-103 .sz-39{border-color:#fff;color:#fff}
+#sz-103-40:checked~.modals #am-103 .sz-40{border-color:#fff;color:#fff}
+#sz-103-41:checked~.modals #am-103 .sz-41{border-color:#fff;color:#fff}
+#sz-103-42:checked~.modals #am-103 .sz-42{border-color:#fff;color:#fff}
+#sz-103-43:checked~.modals #am-103 .sz-43{border-color:#fff;color:#fff}
+#sz-103-44:checked~.modals #am-103 .sz-44{border-color:#fff;color:#fff}
+#sz-103-45:checked~.modals #am-103 .sz-45{border-color:#fff;color:#fff}
+#sz-103-46:checked~.modals #am-103 .sz-46{border-color:#fff;color:#fff}
+#sz-104-39:checked~.modals #am-104 .sz-39{border-color:#fff;color:#fff}
+#sz-104-40:checked~.modals #am-104 .sz-40{border-color:#fff;color:#fff}
+#sz-104-41:checked~.modals #am-104 .sz-41{border-color:#fff;color:#fff}
+#sz-104-42:checked~.modals #am-104 .sz-42{border-color:#fff;color:#fff}
+#sz-104-43:checked~.modals #am-104 .sz-43{border-color:#fff;color:#fff}
+#sz-104-44:checked~.modals #am-104 .sz-44{border-color:#fff;color:#fff}
+#sz-104-45:checked~.modals #am-104 .sz-45{border-color:#fff;color:#fff}
+#sz-104-46:checked~.modals #am-104 .sz-46{border-color:#fff;color:#fff}
+#sz-105-39:checked~.modals #am-105 .sz-39{border-color:#fff;color:#fff}
+#sz-105-40:checked~.modals #am-105 .sz-40{border-color:#fff;color:#fff}
+#sz-105-41:checked~.modals #am-105 .sz-41{border-color:#fff;color:#fff}
+#sz-105-42:checked~.modals #am-105 .sz-42{border-color:#fff;color:#fff}
+#sz-105-43:checked~.modals #am-105 .sz-43{border-color:#fff;color:#fff}
+#sz-105-44:checked~.modals #am-105 .sz-44{border-color:#fff;color:#fff}
+#sz-105-45:checked~.modals #am-105 .sz-45{border-color:#fff;color:#fff}
+#sz-105-46:checked~.modals #am-105 .sz-46{border-color:#fff;color:#fff}
+#sz-106-39:checked~.modals #am-106 .sz-39{border-color:#fff;color:#fff}
+#sz-106-40:checked~.modals #am-106 .sz-40{border-color:#fff;color:#fff}
+#sz-106-41:checked~.modals #am-106 .sz-41{border-color:#fff;color:#fff}
+#sz-106-42:checked~.modals #am-106 .sz-42{border-color:#fff;color:#fff}
+#sz-106-43:checked~.modals #am-106 .sz-43{border-color:#fff;color:#fff}
+#sz-106-44:checked~.modals #am-106 .sz-44{border-color:#fff;color:#fff}
+#sz-106-45:checked~.modals #am-106 .sz-45{border-color:#fff;color:#fff}
+#sz-106-46:checked~.modals #am-106 .sz-46{border-color:#fff;color:#fff}
+#sz-107-39:checked~.modals #am-107 .sz-39{border-color:#fff;color:#fff}
+#sz-107-40:checked~.modals #am-107 .sz-40{border-color:#fff;color:#fff}
+#sz-107-41:checked~.modals #am-107 .sz-41{border-color:#fff;color:#fff}
+#sz-107-42:checked~.modals #am-107 .sz-42{border-color:#fff;color:#fff}
+#sz-107-43:checked~.modals #am-107 .sz-43{border-color:#fff;color:#fff}
+#sz-107-44:checked~.modals #am-107 .sz-44{border-color:#fff;color:#fff}
+#sz-107-45:checked~.modals #am-107 .sz-45{border-color:#fff;color:#fff}
+#sz-107-46:checked~.modals #am-107 .sz-46{border-color:#fff;color:#fff}
+#sz-108-39:checked~.modals #am-108 .sz-39{border-color:#fff;color:#fff}
+#sz-108-40:checked~.modals #am-108 .sz-40{border-color:#fff;color:#fff}
+#sz-108-41:checked~.modals #am-108 .sz-41{border-color:#fff;color:#fff}
+#sz-108-42:checked~.modals #am-108 .sz-42{border-color:#fff;color:#fff}
+#sz-108-43:checked~.modals #am-108 .sz-43{border-color:#fff;color:#fff}
+#sz-108-44:checked~.modals #am-108 .sz-44{border-color:#fff;color:#fff}
+#sz-108-45:checked~.modals #am-108 .sz-45{border-color:#fff;color:#fff}
+#sz-108-46:checked~.modals #am-108 .sz-46{border-color:#fff;color:#fff}
+#sz-109-39:checked~.modals #am-109 .sz-39{border-color:#fff;color:#fff}
+#sz-109-40:checked~.modals #am-109 .sz-40{border-color:#fff;color:#fff}
+#sz-109-41:checked~.modals #am-109 .sz-41{border-color:#fff;color:#fff}
+#sz-109-42:checked~.modals #am-109 .sz-42{border-color:#fff;color:#fff}
+#sz-109-43:checked~.modals #am-109 .sz-43{border-color:#fff;color:#fff}
+#sz-109-44:checked~.modals #am-109 .sz-44{border-color:#fff;color:#fff}
+#sz-109-45:checked~.modals #am-109 .sz-45{border-color:#fff;color:#fff}
+#sz-109-46:checked~.modals #am-109 .sz-46{border-color:#fff;color:#fff}
+.am-right .size-box{float:none;display:inline-block;margin:0 8px 8px 0}.am-right .size-container{overflow:visible}
+#g-1-2:checked~.modals #am-1 .gi-2{opacity:1}
+#g-1-2:checked~.modals #am-1 .gt-2{border-color:#cc0000}
+#g-1-3:checked~.modals #am-1 .gi-3{opacity:1}
+#g-1-3:checked~.modals #am-1 .gt-3{border-color:#cc0000}
+#g-2-2:checked~.modals #am-2 .gi-2{opacity:1}
+#g-2-2:checked~.modals #am-2 .gt-2{border-color:#cc0000}
+#g-2-3:checked~.modals #am-2 .gi-3{opacity:1}
+#g-2-3:checked~.modals #am-2 .gt-3{border-color:#cc0000}
+#g-3-2:checked~.modals #am-3 .gi-2{opacity:1}
+#g-3-2:checked~.modals #am-3 .gt-2{border-color:#cc0000}
+#g-3-3:checked~.modals #am-3 .gi-3{opacity:1}
+#g-3-3:checked~.modals #am-3 .gt-3{border-color:#cc0000}
+#g-4-2:checked~.modals #am-4 .gi-2{opacity:1}
+#g-4-2:checked~.modals #am-4 .gt-2{border-color:#cc0000}
+#g-4-3:checked~.modals #am-4 .gi-3{opacity:1}
+#g-4-3:checked~.modals #am-4 .gt-3{border-color:#cc0000}
+#g-5-2:checked~.modals #am-5 .gi-2{opacity:1}
+#g-5-2:checked~.modals #am-5 .gt-2{border-color:#cc0000}
+#g-5-3:checked~.modals #am-5 .gi-3{opacity:1}
+#g-5-3:checked~.modals #am-5 .gt-3{border-color:#cc0000}
+#g-6-2:checked~.modals #am-6 .gi-2{opacity:1}
+#g-6-2:checked~.modals #am-6 .gt-2{border-color:#cc0000}
+#g-6-3:checked~.modals #am-6 .gi-3{opacity:1}
+#g-6-3:checked~.modals #am-6 .gt-3{border-color:#cc0000}
+#g-7-2:checked~.modals #am-7 .gi-2{opacity:1}
+#g-7-2:checked~.modals #am-7 .gt-2{border-color:#cc0000}
+#g-7-3:checked~.modals #am-7 .gi-3{opacity:1}
+#g-7-3:checked~.modals #am-7 .gt-3{border-color:#cc0000}
+#g-14-2:checked~.modals #am-14 .gi-2{opacity:1}
+#g-14-2:checked~.modals #am-14 .gt-2{border-color:#cc0000}
+#g-14-3:checked~.modals #am-14 .gi-3{opacity:1}
+#g-14-3:checked~.modals #am-14 .gt-3{border-color:#cc0000}
+#g-15-2:checked~.modals #am-15 .gi-2{opacity:1}
+#g-15-2:checked~.modals #am-15 .gt-2{border-color:#cc0000}
+#g-15-3:checked~.modals #am-15 .gi-3{opacity:1}
+#g-15-3:checked~.modals #am-15 .gt-3{border-color:#cc0000}
+#g-16-2:checked~.modals #am-16 .gi-2{opacity:1}
+#g-16-2:checked~.modals #am-16 .gt-2{border-color:#cc0000}
+#g-16-3:checked~.modals #am-16 .gi-3{opacity:1}
+#g-16-3:checked~.modals #am-16 .gt-3{border-color:#cc0000}
+#g-17-2:checked~.modals #am-17 .gi-2{opacity:1}
+#g-17-2:checked~.modals #am-17 .gt-2{border-color:#cc0000}
+#g-17-3:checked~.modals #am-17 .gi-3{opacity:1}
+#g-17-3:checked~.modals #am-17 .gt-3{border-color:#cc0000}
+#g-18-2:checked~.modals #am-18 .gi-2{opacity:1}
+#g-18-2:checked~.modals #am-18 .gt-2{border-color:#cc0000}
+#g-18-3:checked~.modals #am-18 .gi-3{opacity:1}
+#g-18-3:checked~.modals #am-18 .gt-3{border-color:#cc0000}
+#g-19-2:checked~.modals #am-19 .gi-2{opacity:1}
+#g-19-2:checked~.modals #am-19 .gt-2{border-color:#cc0000}
+#g-19-3:checked~.modals #am-19 .gi-3{opacity:1}
+#g-19-3:checked~.modals #am-19 .gt-3{border-color:#cc0000}
+#g-20-2:checked~.modals #am-20 .gi-2{opacity:1}
+#g-20-2:checked~.modals #am-20 .gt-2{border-color:#cc0000}
+#g-20-3:checked~.modals #am-20 .gi-3{opacity:1}
+#g-20-3:checked~.modals #am-20 .gt-3{border-color:#cc0000}
+
+/* Товары, для которых фото кладутся в папку img/ (тёмная плитка, пока файла нет) */
+.p-img.local{background-color:#161616}
+.p-img.local .i1{background-size:contain}
+.p-img.local::before{color:#777}
+
+
+/* ===== ФИНАЛЬНАЯ ДОВОДКА: главная, пустые картинки, галерея ===== */
+
+/* Главная: четыре равные карточки в ряд */
+.hub-container{display:flex;gap:24px;width:92%;max-width:1250px;overflow:visible}
+.hub-container .brand-card{position:relative;float:none;flex:1;min-width:0;width:auto;margin:0;box-sizing:border-box;padding:0 14px;overflow:hidden}
+.hub-container .brand-logo{margin-top:170px;font-size:30px;letter-spacing:2px;word-wrap:break-word}
+.hub-container .erd-logo{font-size:44px}
+.hub-container .balenciaga-logo{font-size:28px;letter-spacing:2px}
+.hub-container .margiela-logo{font-size:23px;letter-spacing:1px;white-space:nowrap}
+.brand-index{position:absolute;top:26px;left:28px;font-size:12px;letter-spacing:3px;color:#555;-webkit-transition:.4s;transition:.4s}
+.brand-card:hover .brand-index{color:#cc0000}
+.brand-card::after{content:"";position:absolute;left:50%;bottom:0;width:0;height:2px;background:#cc0000;-webkit-transform:translateX(-50%);transform:translateX(-50%);-webkit-transition:width .5s;transition:width .5s}
+.brand-card:hover::after{width:60%}
+.acc-logo{font-size:28px;margin-bottom:22px!important}
+.acc-list span{display:block;margin:7px 0;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#666;-webkit-transition:.4s;transition:.4s}
+.acc-card:hover .acc-list span{color:#aaa}
+.acc-card .view-text{margin-top:26px}
+@media (max-width:1000px){.hub-container{flex-wrap:wrap}.hub-container .brand-card{flex:1 1 40%;height:360px}.hub-container .brand-logo{margin-top:120px}}
+
+/* Галерея: тёмная плитка вместо белого полотна, если картинка не загрузилась */
+.gallery-item{background-color:#161616}
+.gallery-item::before{content:attr(data-name);position:absolute;left:0;right:0;top:50%;margin-top:-1em;padding:0 20px;text-align:center;font-size:12px;letter-spacing:2px;color:#666;text-transform:uppercase}
+.gallery-item .g-img{padding:0;background-color:transparent;font-size:0;position:absolute;left:0;top:0;width:100%;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;-webkit-transition:.5s;transition:.5s}
+.gallery-item:hover .g-img{-webkit-transform:scale(1.06);transform:scale(1.06)}
+.gallery-item .g-cap{position:absolute;left:0;bottom:0;width:100%;box-sizing:border-box;padding:14px 20px;background-color:rgba(17,17,17,.9);color:#fff;font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;-webkit-transform:translateY(100%);transform:translateY(100%);-webkit-transition:.3s;transition:.3s}
+.gallery-item:hover .g-cap{-webkit-transform:translateY(0);transform:translateY(0)}
+
+/* Аксессуары и Margiela: тёмная плитка + иконка категории, фото ложатся сверху */
+.p-img{background-color:#161616;background-repeat:no-repeat;background-position:center 42%;background-size:38%}
+.p-img::before{top:auto;bottom:14px;margin:0;font-size:10px;color:#666}
+.p-card .p-img .i1,.p-card .p-img.local .i1,.p-card .p-img .i2{background-size:cover;-webkit-transform:none;transform:none}
+.p-card:hover .p-img .i1{-webkit-transform:scale(1.05);transform:scale(1.05)}
+.p-img.noimg{background-image:none}
+.ic-ring{background-image:url('img/icon-ring.svg')}.ic-bracelet{background-image:url('img/icon-bracelet.svg')}.ic-belt{background-image:url('img/icon-belt.svg')}.ic-wallet{background-image:url('img/icon-wallet.svg')}.ic-watch{background-image:url('img/icon-watch.svg')}.ic-cufflink{background-image:url('img/icon-cufflink.svg')}.ic-boot{background-image:url('img/icon-boot.svg')}
+.p-img.ic-ring{background-image:url('img/icon-ring.svg')}.p-img.ic-bracelet{background-image:url('img/icon-bracelet.svg')}.p-img.ic-belt{background-image:url('img/icon-belt.svg')}.p-img.ic-wallet{background-image:url('img/icon-wallet.svg')}.p-img.ic-watch{background-image:url('img/icon-watch.svg')}.p-img.ic-cufflink{background-image:url('img/icon-cufflink.svg')}.p-img.ic-boot{background-image:url('img/icon-boot.svg')}
+.am-left{background-color:#161616}
+.am-stage{background-color:#161616;background-repeat:no-repeat;background-position:center;background-size:30%}
+.am-stage .gi,.am-stage .gi-1{background-size:cover}
+.am-thumbs{background-color:#111}
+.gt{background-color:#222}
+.gt-1,.gt-2,.gt-3,.gt-4{background-size:cover}
+
+.gallery-item .g-img,.gallery-item:hover .g-img{-webkit-transform:none;transform:none}
+.gallery-item:hover .g-img{-webkit-transform:scale(1.06);transform:scale(1.06)}

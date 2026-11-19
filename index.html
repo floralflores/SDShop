@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Sweet Dreams Shop</title>
@@ -11,6 +11,14 @@
     
     <!-- главная сайта содержит логотип ссылку на главную страницу и кнопку корзины -->
     <div class="site-header">
+        <!-- Главное меню сайта (якорные ссылки на разделы главной страницы) -->
+        <nav class="header-nav">
+            <a href="index.html#brands">Бренды</a>
+            <a href="accessories.html">Аксессуары</a>
+            <a href="index.html#gallery">Галерея</a>
+            <a href="index.html#order">Заказ</a>
+            <a href="index.html#contacts">Контакты</a>
+        </nav>
         <a href="index.html" class="header-logo">
             <img src="sweetdreamsshop.jpg" alt="Sweet Dreams Shop">
         </a>
@@ -35,25 +43,120 @@
     </div>
 
     <!-- Основная страница навигации по брендам -->
-    <div class="hub-container">
-        <!-- Карточка-ссылка на страницу коллекции NIKE -->
-        <a href="nike.html" class="brand-card">
-            <div class="brand-logo nike-logo">NIKE</div>
+    <div class="hub-container" id="brands">
+        <!-- Карточка-ссылка на страницу коллекции MAISON MARGIELA -->
+        <a href="margiela.html" class="brand-card">
+            <span class="brand-index">01</span>
+            <div class="brand-logo margiela-logo">MAISON MARGIELA</div>
             <div class="view-text">VIEW COLLECTION</div>
         </a>
         <!-- Карточка-ссылка на страницу коллекции BALENCIAGA -->
         <a href="balenciaga.html" class="brand-card">
+            <span class="brand-index">02</span>
             <div class="brand-logo balenciaga-logo">BALENCIAGA</div>
             <div class="view-text">VIEW COLLECTION</div>
         </a>
         <!-- Карточка-ссылка на страницу коллекции ERD -->
         <a href="erd.html" class="brand-card">
+            <span class="brand-index">03</span>
             <div class="brand-logo erd-logo">ERD</div>
+            <div class="view-text">VIEW COLLECTION</div>
+        </a>
+        <!-- Карточка-ссылка на раздел ПРЕМИУМ-АКСЕССУАРЫ -->
+        <a href="accessories.html" class="brand-card acc-card">
+            <span class="brand-index">04</span>
+            <div class="brand-logo acc-logo">ACCESSORIES</div>
+            <div class="acc-list"><span>Chrome Hearts</span><span>Tiffany &amp; Co</span><span>Hermès</span><span>Patek Philippe</span></div>
             <div class="view-text">VIEW COLLECTION</div>
         </a>
     </div>
 
-    <!-- Скрытый чекбокс для логики открытия/закрытия модального окна "Обратная связь" -->
+    <!-- ===== РАЗДЕЛИТЕЛЬ: бегущая строка (HTML-блок с собственной CSS-анимацией, без скриптов) ===== -->
+    <div class="ticker">
+        <div class="ticker-track">
+            <span>SWEET DREAMS SHOP</span><span class="dot">●</span><span>MAISON MARGIELA</span><span class="dot">●</span><span>BALENCIAGA</span><span class="dot">●</span><span>ERD</span><span class="dot">●</span><span>MOSCOW · SINCE 2018</span><span class="dot">●</span>
+            <span>SWEET DREAMS SHOP</span><span class="dot">●</span><span>MAISON MARGIELA</span><span class="dot">●</span><span>BALENCIAGA</span><span class="dot">●</span><span>ERD</span><span class="dot">●</span><span>MOSCOW · SINCE 2018</span><span class="dot">●</span>
+        </div>
+    </div>
+
+    <!-- ===== БЛОК «ПРЕИМУЩЕСТВА» ===== -->
+    <div class="section" id="advantages">
+        <h2 class="section-title">Почему мы</h2>
+        <p class="section-sub">Четыре причины выбрать Sweet Dreams Shop</p>
+        <div class="adv-grid">
+            <div class="adv-card"><div class="adv-num">01</div><h3>Только оригинал</h3><p>Каждая пара проходит проверку подлинности, прежде чем попасть на полку.</p></div>
+            <div class="adv-card"><div class="adv-num">02</div><h3>Редкие релизы</h3><p>Лимитированные коллекции и модели, которых нет в масс-маркете.</p></div>
+            <div class="adv-card"><div class="adv-num">03</div><h3>Примерка в бутике</h3><p>Приходите в Столешников переулок и примерьте пару перед покупкой.</p></div>
+            <div class="adv-card"><div class="adv-num">04</div><h3>Доставка по России</h3><p>Отправляем заказы по всей стране и сообщаем номер для отслеживания.</p></div>
+        </div>
+    </div>
+
+    <!-- ===== ГАЛЕРЕЯ: при наведении появляется подпись, клик ведёт в коллекцию бренда ===== -->
+    <div class="section" id="gallery">
+        <h2 class="section-title">Галерея</h2>
+        <p class="section-sub">Избранные модели из наших коллекций</p>
+        <div class="gallery-grid">
+            <a href="margiela.html" class="gallery-item" data-name="MAISON MARGIELA · Tabi Ankle Boot"><span class="g-img" style="background-image:url('https://www.maisonmargiela.com/on/demandware.static/-/Sites-margiela-master-catalog/default/dw21f0a4c7/images/large/S57WU0132_P9616_H1137_F.jpg')"></span><span class="g-cap">MAISON MARGIELA · Tabi Ankle Boot</span></a>
+            <a href="balenciaga.html" class="gallery-item" data-name="BALENCIAGA · Triple S.2 Sneaker"><span class="g-img" style="background-image:url('https://balenciaga.dam.kering.com/asset/a9a87f9e-0561-4c8f-9e47-5642e6abf7d0/Large/865849WTRS21011_F.jpg?v=4')"></span><span class="g-cap">BALENCIAGA · Triple S.2 Sneaker</span></a>
+            <a href="erd.html" class="gallery-item" data-name="ERD · Radiation Heel"><span class="g-img" style="background-image:url('https://cdn.shopify.com/s/files/1/0729/7482/7794/files/11-0704-A_780x.png?v=1774557611')"></span><span class="g-cap">ERD · Radiation Heel</span></a>
+            <a href="balenciaga.html" class="gallery-item" data-name="BALENCIAGA · Runner Sneaker"><span class="g-img" style="background-image:url('https://balenciaga.dam.kering.com/m/5f97b73e644fdd/Large-772774W3RMU1100_F.jpg?v=2')"></span><span class="g-cap">BALENCIAGA · Runner Sneaker</span></a>
+            <a href="erd.html" class="gallery-item" data-name="ERD · Glory Loafer"><span class="g-img" style="background-image:url('https://cdn.shopify.com/s/files/1/0729/7482/7794/files/11-0686-B_924b93f2-2580-46a2-95c2-3f765e93cf6f_780x.png?v=1774632249')"></span><span class="g-cap">ERD · Glory Loafer</span></a>
+            <a href="balenciaga.html" class="gallery-item" data-name="BALENCIAGA · 3XL Extreme Laces B"><span class="g-img" style="background-image:url('https://balenciaga.dam.kering.com/m/154103c77be60e18/Large-825601W3XCH1000_F.jpg?v=2')"></span><span class="g-cap">BALENCIAGA · 3XL Extreme Laces B</span></a>
+        </div>
+    </div>
+
+    <!-- ===== БЛОК «ЭТАПЫ»: как оформить заказ ===== -->
+    <div class="section" id="stages">
+        <h2 class="section-title">Как заказать</h2>
+        <p class="section-sub">Четыре простых шага</p>
+        <div class="steps">
+            <div class="step"><div class="step-num">1</div><h3>Выберите модель</h3><p>Откройте коллекцию бренда и выберите пару в каталоге.</p></div>
+            <div class="step"><div class="step-num">2</div><h3>Укажите размер</h3><p>Выберите цвет и размер, добавьте товар в корзину.</p></div>
+            <div class="step"><div class="step-num">3</div><h3>Оставьте заявку</h3><p>Заполните форму заказа ниже — это займёт минуту.</p></div>
+            <div class="step"><div class="step-num">4</div><h3>Получите заказ</h3><p>Менеджер свяжется с вами и согласует доставку или самовывоз.</p></div>
+        </div>
+    </div>
+
+    <!-- ===== ФОРМА ЗАКАЗА (отправка через почтовый клиент, скрипты не нужны) ===== -->
+    <div class="section" id="order">
+        <h2 class="section-title">Оформить заказ</h2>
+        <p class="section-sub">Оставьте заявку — мы свяжемся с вами и подтвердим наличие</p>
+        <form class="order-form" action="mailto:swdreamsshop@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="Имя" class="form-field" placeholder="Ваше имя" required>
+            <input type="tel" name="Телефон" class="form-field" placeholder="Телефон" required>
+            <input type="email" name="Email" class="form-field" placeholder="Email">
+            <select name="Бренд" class="form-field"><optgroup label="Обувь"><option value="Maison Margiela">Maison Margiela</option><option value="Balenciaga">Balenciaga</option><option value="ERD">ERD</option></optgroup><optgroup label="Аксессуары"><option value="Chrome Hearts">Chrome Hearts</option><option value="Tiffany &amp; Co">Tiffany &amp; Co</option><option value="Hermès">Hermès</option><option value="Patek Philippe">Patek Philippe</option></optgroup></select>
+            <input type="text" name="Модель" class="form-field" placeholder="Модель (например, Tabi Ankle Boot)" required>
+            <select name="Размер EU" class="form-field"><option>EU 36</option><option>EU 37</option><option>EU 38</option><option>EU 39</option><option>EU 40</option><option>EU 41</option><option>EU 42</option><option>EU 43</option><option>EU 44</option><option>EU 45</option></select>
+            <textarea name="Комментарий" class="form-field form-area" placeholder="Комментарий к заказу"></textarea>
+            <button type="submit" class="form-submit">Отправить заказ</button>
+        </form>
+    </div>
+
+    <!-- ===== КОНТАКТЫ: адрес, фрагмент карты и кнопки соцсетей ===== -->
+    <div class="section" id="contacts">
+        <h2 class="section-title">Контакты</h2>
+        <p class="section-sub">Ждём вас в нашем бутике</p>
+        <div class="contacts-wrap">
+            <div class="contacts-info">
+                <div class="contact-row"><div class="contact-label">АДРЕС</div>г. Москва, Столешников переулок, д. 7</div>
+                <div class="contact-row"><div class="contact-label">E-MAIL</div><a href="mailto:swdreamsshop@gmail.com">swdreamsshop@gmail.com</a></div>
+                <div class="contact-row"><div class="contact-label">TELEGRAM</div><a href="https://t.me/floralflores" target="_blank">@floralflores</a></div>
+                <div class="contact-row"><div class="contact-label">МЫ В СОЦСЕТЯХ</div>
+                    <a href="https://t.me/floralflores" target="_blank" class="social-btn">Telegram</a>
+                    <a href="https://vk.com/" target="_blank" class="social-btn">VK</a>
+                    <a href="mailto:swdreamsshop@gmail.com" class="social-btn">E-mail</a>
+                </div>
+            </div>
+            <div class="contacts-map">
+                <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=37.6040%2C55.7600%2C37.6270%2C55.7700&amp;layer=mapnik&amp;marker=55.7650%2C37.6155" title="Карта: Столешников переулок, 7"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="page-end"></div>
+
+    
+<!-- Скрытый чекбокс для логики открытия/закрытия модального окна "Обратная связь" -->
     <input type="checkbox" id="feedback-toggle">
     
     <!-- Всплывающее модальное окно обратной связи -->
@@ -63,7 +166,7 @@
             <label for="feedback-toggle" class="close-feedback">&times;</label>
             <h2 style="margin-top:0; color:#fff;">ОБРАТНАЯ СВЯЗЬ</h2>
             <!-- Информационный текст с контактами -->
-            <p style="color:#888; font-size:13px; margin-bottom:20px;">Напишите нам напрямую в Telegram<br><b style="color:#fff;">@terentiyok</b></p>
+            <p style="color:#888; font-size:13px; margin-bottom:20px;">Напишите нам напрямую в Telegram<br><b style="color:#fff;">@floralflores</b></p>
             <!-- Поле для ввода Email пользователя -->
             <input type="text" class="feedback-input" placeholder="Ваш Email">
             <!-- Текстовое поле для ввода сообщения/вопроса -->

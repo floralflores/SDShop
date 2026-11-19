@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Премиум-аксессуары | Sweet Dreams Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Управляющие элементы без JavaScript: корзина, вкладки брендов, товары в корзине, галереи в карточках -->
+    <input type="checkbox" id="cart-drawer-toggle">
+    <input type="radio" name="brand-tab" id="tab-ch" checked>
+    <input type="radio" name="brand-tab" id="tab-tf">
+    <input type="radio" name="brand-tab" id="tab-hm">
+    <input type="radio" name="brand-tab" id="tab-pp">
+    <input type="checkbox" id="acc-item-1" class="cart-toggle">
+    <input type="checkbox" id="acc-item-2" class="cart-toggle">
+    <input type="checkbox" id="acc-item-3" class="cart-toggle">
+    <input type="checkbox" id="acc-item-4" class="cart-toggle">
+    <input type="checkbox" id="acc-item-5" class="cart-toggle">
+    <input type="checkbox" id="acc-item-6" class="cart-toggle">
+    <input type="checkbox" id="acc-item-7" class="cart-toggle">
+    <input type="checkbox" id="acc-item-8" class="cart-toggle">
+    <input type="checkbox" id="acc-item-9" class="cart-toggle">
+    <input type="checkbox" id="acc-item-10" class="cart-toggle">
+    <input type="checkbox" id="acc-item-11" class="cart-toggle">
+    <input type="checkbox" id="acc-item-12" class="cart-toggle">
+    <input type="checkbox" id="acc-item-13" class="cart-toggle">
+    <input type="checkbox" id="acc-item-14" class="cart-toggle">
+    <input type="checkbox" id="acc-item-15" class="cart-toggle">
+    <input type="checkbox" id="acc-item-16" class="cart-toggle">
+    <input type="checkbox" id="acc-item-17" class="cart-toggle">
+    <input type="checkbox" id="acc-item-18" class="cart-toggle">
+    <input type="checkbox" id="acc-item-19" class="cart-toggle">
+    <input type="checkbox" id="acc-item-20" class="cart-toggle">
+    <input type="checkbox" id="acc-item-21" class="cart-toggle">
+    <input type="checkbox" id="acc-item-22" class="cart-toggle">
+    <input type="checkbox" id="acc-item-23" class="cart-toggle">
+    <input type="checkbox" id="acc-item-24" class="cart-toggle">
+    <input type="checkbox" id="acc-item-25" class="cart-toggle">
+    <input type="checkbox" id="acc-item-26" class="cart-toggle">
+    <input type="checkbox" id="acc-item-27" class="cart-toggle">
+    <input type="checkbox" id="acc-item-28" class="cart-toggle">
+    <input type="radio" name="g-1" id="g-1-1" checked>
+    <input type="radio" name="g-1" id="g-1-2">
+    <input type="radio" name="g-1" id="g-1-3">
+    <input type="radio" name="g-2" id="g-2-1" checked>
+    <input type="radio" name="g-2" id="g-2-2">
+    <input type="radio" name="g-2" id="g-2-3">
+    <input type="radio" name="g-3" id="g-3-1" checked>
+    <input type="radio" name="g-3" id="g-3-2">
+    <input type="radio" name="g-3" id="g-3-3">
+    <input type="radio" name="g-4" id="g-4-1" checked>
+    <input type="radio" name="g-4" id="g-4-2">
+    <input type="radio" name="g-4" id="g-4-3">
+    <input type="radio" name="g-5" id="g-5-1" checked>
+    <input type="radio" name="g-5" id="g-5-2">
+    <input type="radio" name="g-5" id="g-5-3">
+    <input type="radio" name="g-6" id="g-6-1" checked>
+    <input type="radio" name="g-6" id="g-6-2">
+    <input type="radio" name="g-6" id="g-6-3">
+    <input type="radio" name="g-7" id="g-7-1" checked>
+    <input type="radio" name="g-7" id="g-7-2">
+    <input type="radio" name="g-7" id="g-7-3">
+    <input type="radio" name="g-8" id="g-8-1" checked>
+    <input type="radio" name="g-8" id="g-8-2">
+    <input type="radio" name="g-8" id="g-8-3">
+    <input type="radio" name="g-9" id="g-9-1" checked>
+    <input type="radio" name="g-9" id="g-9-2">
+    <input type="radio" name="g-9" id="g-9-3">
+    <input type="radio" name="g-10" id="g-10-1" checked>
+    <input type="radio" name="g-10" id="g-10-2">
+    <input type="radio" name="g-10" id="g-10-3">
+    <input type="radio" name="g-11" id="g-11-1" checked>
+    <input type="radio" name="g-11" id="g-11-2">
+    <input type="radio" name="g-11" id="g-11-3">
+    <input type="radio" name="g-12" id="g-12-1" checked>
+    <input type="radio" name="g-12" id="g-12-2">
+    <input type="radio" name="g-12" id="g-12-3">
+    <input type="radio" name="g-13" id="g-13-1" checked>
+    <input type="radio" name="g-13" id="g-13-2">
+    <input type="radio" name="g-13" id="g-13-3">
+    <input type="radio" name="g-14" id="g-14-1" checked>
+    <input type="radio" name="g-14" id="g-14-2">
+    <input type="radio" name="g-14" id="g-14-3">
+    <input type="radio" name="g-15" id="g-15-1" checked>
+    <input type="radio" name="g-15" id="g-15-2">
+    <input type="radio" name="g-15" id="g-15-3">
+    <input type="radio" name="g-16" id="g-16-1" checked>
+    <input type="radio" name="g-16" id="g-16-2">
+    <input type="radio" name="g-16" id="g-16-3">
+    <input type="radio" name="g-17" id="g-17-1" checked>
+    <input type="radio" name="g-17" id="g-17-2">
+    <input type="radio" name="g-17" id="g-17-3">
+    <input type="radio" name="g-18" id="g-18-1" checked>
+    <input type="radio" name="g-18" id="g-18-2">
+    <input type="radio" name="g-18" id="g-18-3">
+    <input type="radio" name="g-19" id="g-19-1" checked>
+    <input type="radio" name="g-19" id="g-19-2">
+    <input type="radio" name="g-19" id="g-19-3">
+    <input type="radio" name="g-20" id="g-20-1" checked>
+    <input type="radio" name="g-20" id="g-20-2">
+    <input type="radio" name="g-20" id="g-20-3">
+    <input type="radio" name="g-21" id="g-21-1" checked>
+    <input type="radio" name="g-21" id="g-21-2">
+    <input type="radio" name="g-21" id="g-21-3">
+    <input type="radio" name="g-21" id="g-21-4">
+    <input type="radio" name="g-22" id="g-22-1" checked>
+    <input type="radio" name="g-22" id="g-22-2">
+    <input type="radio" name="g-22" id="g-22-3">
+    <input type="radio" name="g-23" id="g-23-1" checked>
+    <input type="radio" name="g-23" id="g-23-2">
+    <input type="radio" name="g-23" id="g-23-3">
+    <input type="radio" name="g-24" id="g-24-1" checked>
+    <input type="radio" name="g-24" id="g-24-2">
+    <input type="radio" name="g-24" id="g-24-3">
+    <input type="radio" name="g-25" id="g-25-1" checked>
+    <input type="radio" name="g-25" id="g-25-2">
+    <input type="radio" name="g-25" id="g-25-3">
+    <input type="radio" name="g-26" id="g-26-1" checked>
+    <input type="radio" name="g-26" id="g-26-2">
+    <input type="radio" name="g-26" id="g-26-3">
+    <input type="radio" name="g-27" id="g-27-1" checked>
+    <input type="radio" name="g-27" id="g-27-2">
+    <input type="radio" name="g-27" id="g-27-3">
+    <input type="radio" name="g-28" id="g-28-1" checked>
+    <input type="radio" name="g-28" id="g-28-2">
+    <input type="radio" name="g-28" id="g-28-3">
+    <input type="checkbox" id="feedback-toggle">
+
+    <header class="site-header">
+        <nav class="header-nav">
+            <a href="index.html#brands">Бренды</a>
+            <a href="accessories.html" class="nav-on">Аксессуары</a>
+            <a href="index.html#gallery">Галерея</a>
+            <a href="index.html#order">Заказ</a>
+            <a href="index.html#contacts">Контакты</a>
+        </nav>
+        <a href="index.html" class="header-logo"><img src="sweetdreamsshop.jpg" alt="Sweet Dreams Shop"></a>
+        <div class="header-cart">
+            <label for="cart-drawer-toggle" style="cursor:pointer; display:block; height:100%;">
+                <svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                <div class="cart-badge"></div>
+            </label>
+        </div>
+    </header>
+
+    <label for="cart-drawer-toggle" class="cart-overlay"></label>
+
+    <!-- Боковая панель корзины (Off-canvas) -->
+    <aside class="cart-sidebar">
+        <div class="cart-header"><h2>YOUR CART</h2><label for="cart-drawer-toggle" class="close-cart">&times;</label></div>
+        <div class="cart-empty">Добавьте аксессуары из каталога</div>
+        <div class="cart-item-display ci-1"><div class="acart-thumb" style="background-image:url('img/ch-1-1.jpg')"></div><div class="cart-item-info"><h4>CH Cross Band Ring</h4><div class="p-cat">Chrome Hearts</div><div class="cart-price">59 900 ₽</div></div><label for="acc-item-1" class="remove-label">Удалить</label></div><div class="cart-item-display ci-2"><div class="acart-thumb" style="background-image:url('img/ch-2-1.jpg')"></div><div class="cart-item-info"><h4>SBT Band Ring</h4><div class="p-cat">Chrome Hearts</div><div class="cart-price">42 900 ₽</div></div><label for="acc-item-2" class="remove-label">Удалить</label></div><div class="cart-item-display ci-3"><div class="acart-thumb" style="background-image:url('img/ch-3-1.jpg')"></div><div class="cart-item-info"><h4>Keeper Ring</h4><div class="p-cat">Chrome Hearts</div><div class="cart-price">118 000 ₽</div></div><label for="acc-item-3" class="remove-label">Удалить</label></div><div class="cart-item-display ci-4"><div class="acart-thumb" style="background-image:url('img/ch-4-1.jpg')"></div><div class="cart-item-info"><h4>Spacer Ring</h4><div class="p-cat">Chrome Hearts</div><div class="cart-price">46 500 ₽</div></div><label for="acc-item-4" class="remove-label">Удалить</label></div><div class="cart-item-display ci-5"><div class="acart-thumb" style="background-image:url('img/ch-5-1.jpg')"></div><div class="cart-item-info"><h4>Paper Chain Bracelet</h4><div class="p-cat">Chrome Hearts</div><div class="cart-price">185 000 ₽</div></div><label for="acc-item-5" class="remove-label">Удалить</label></div><div class="cart-item-display ci-6"><div class="acart-thumb" style="background-image:url('img/ch-6-1.jpg')"></div><div class="cart-item-info"><h4>Dagger ID Bracelet</h4><div class="p-cat">Chrome Hearts</div><div class="cart-price">320 000 ₽</div></div><label for="acc-item-6" class="remove-label">Удалить</label></div><div class="cart-item-display ci-7"><div class="acart-thumb" style="background-image:url('img/ch-7-1.jpg')"></div><div class="cart-item-info"><h4>Cemetery Crosses Ring</h4><div class="p-cat">Chrome Hearts</div><div class="cart-price">98 000 ₽</div></div><label for="acc-item-7" class="remove-label">Удалить</label></div><div class="cart-item-display ci-8"><div class="acart-thumb" style="background-image:url('https://media.tiffany.com/is/image/tco/60153085_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></div><div class="cart-item-info"><h4>HardWear Small Link Bracelet</h4><div class="p-cat">Tiffany &amp; Co</div><div class="cart-price">149 900 ₽</div></div><label for="acc-item-8" class="remove-label">Удалить</label></div><div class="cart-item-display ci-9"><div class="acart-thumb" style="background-image:url('https://media.tiffany.com/is/image/tco/60153091_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></div><div class="cart-item-info"><h4>HardWear Large Link Bracelet</h4><div class="p-cat">Tiffany &amp; Co</div><div class="cart-price">179 000 ₽</div></div><label for="acc-item-9" class="remove-label">Удалить</label></div><div class="cart-item-display ci-10"><div class="acart-thumb" style="background-image:url('https://media.tiffany.com/is/image/tco/63104213_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></div><div class="cart-item-info"><h4>HardWear Elongated Link Bracelet</h4><div class="p-cat">Tiffany &amp; Co</div><div class="cart-price">139 000 ₽</div></div><label for="acc-item-10" class="remove-label">Удалить</label></div><div class="cart-item-display ci-11"><div class="acart-thumb" style="background-image:url('https://media.tiffany.com/is/image/tco/60154619_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></div><div class="cart-item-info"><h4>HardWear Ball Bracelet</h4><div class="p-cat">Tiffany &amp; Co</div><div class="cart-price">125 000 ₽</div></div><label for="acc-item-11" class="remove-label">Удалить</label></div><div class="cart-item-display ci-12"><div class="acart-thumb" style="background-image:url('https://media.tiffany.com/is/image/tco/67063678_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></div><div class="cart-item-info"><h4>HardWear Pearl Bracelet</h4><div class="p-cat">Tiffany &amp; Co</div><div class="cart-price">135 000 ₽</div></div><label for="acc-item-12" class="remove-label">Удалить</label></div><div class="cart-item-display ci-13"><div class="acart-thumb" style="background-image:url('https://media.tiffany.com/is/image/tco/67063406_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></div><div class="cart-item-info"><h4>HardWear Pearl Lock Bracelet</h4><div class="p-cat">Tiffany &amp; Co</div><div class="cart-price">152 000 ₽</div></div><label for="acc-item-13" class="remove-label">Удалить</label></div><div class="cart-item-display ci-14"><div class="acart-thumb" style="background-image:url('img/hm-1-1.jpg')"></div><div class="cart-item-info"><h4>Clic H Bracelet</h4><div class="p-cat">Hermès</div><div class="cart-price">52 000 ₽</div></div><label for="acc-item-14" class="remove-label">Удалить</label></div><div class="cart-item-display ci-15"><div class="acart-thumb" style="background-image:url('img/hm-2-1.jpg')"></div><div class="cart-item-info"><h4>Clic Clac H Bracelet</h4><div class="p-cat">Hermès</div><div class="cart-price">64 000 ₽</div></div><label for="acc-item-15" class="remove-label">Удалить</label></div><div class="cart-item-display ci-16"><div class="acart-thumb" style="background-image:url('img/hm-3-1.jpg')"></div><div class="cart-item-info"><h4>Collier de Chien Bracelet</h4><div class="p-cat">Hermès</div><div class="cart-price">88 000 ₽</div></div><label for="acc-item-16" class="remove-label">Удалить</label></div><div class="cart-item-display ci-17"><div class="acart-thumb" style="background-image:url('img/hm-4-1.jpg')"></div><div class="cart-item-info"><h4>Constance Belt Buckle &amp; Reversible Strap 32 mm</h4><div class="p-cat">Hermès</div><div class="cart-price">98 000 ₽</div></div><label for="acc-item-17" class="remove-label">Удалить</label></div><div class="cart-item-display ci-18"><div class="acart-thumb" style="background-image:url('img/hm-5-1.jpg')"></div><div class="cart-item-info"><h4>H Belt Buckle &amp; Reversible Strap 32 mm</h4><div class="p-cat">Hermès</div><div class="cart-price">92 000 ₽</div></div><label for="acc-item-18" class="remove-label">Удалить</label></div><div class="cart-item-display ci-19"><div class="acart-thumb" style="background-image:url('img/hm-6-1.jpg')"></div><div class="cart-item-info"><h4>Béarn Wallet</h4><div class="p-cat">Hermès</div><div class="cart-price">185 000 ₽</div></div><label for="acc-item-19" class="remove-label">Удалить</label></div><div class="cart-item-display ci-20"><div class="acart-thumb" style="background-image:url('img/hm-7-1.jpg')"></div><div class="cart-item-info"><h4>Dogon Duo Wallet</h4><div class="p-cat">Hermès</div><div class="cart-price">142 000 ₽</div></div><label for="acc-item-20" class="remove-label">Удалить</label></div><div class="cart-item-display ci-21"><div class="acart-thumb" style="background-image:url('https://patek-res.cloudinary.com/media/374191/51887')"></div><div class="cart-item-info"><h4>Nautilus 5711/111P-001</h4><div class="p-cat">Patek Philippe</div><div class="cart-price">24 900 000 ₽</div></div><label for="acc-item-21" class="remove-label">Удалить</label></div><div class="cart-item-display ci-22"><div class="acart-thumb" style="background-image:url('https://patek-res.cloudinary.com/media/175354/51882')"></div><div class="cart-item-info"><h4>Nautilus 5811/1G-001</h4><div class="p-cat">Patek Philippe</div><div class="cart-price">7 900 000 ₽</div></div><label for="acc-item-22" class="remove-label">Удалить</label></div><div class="cart-item-display ci-23"><div class="acart-thumb" style="background-image:url('https://patek-res.cloudinary.com/media/175352/51882')"></div><div class="cart-item-info"><h4>Nautilus 5712/1R-001</h4><div class="p-cat">Patek Philippe</div><div class="cart-price">9 400 000 ₽</div></div><label for="acc-item-23" class="remove-label">Удалить</label></div><div class="cart-item-display ci-24"><div class="acart-thumb" style="background-image:url('https://patek-res.cloudinary.com/media/175378/51882')"></div><div class="cart-item-info"><h4>Nautilus 5990/1R-001</h4><div class="p-cat">Patek Philippe</div><div class="cart-price">14 800 000 ₽</div></div><label for="acc-item-24" class="remove-label">Удалить</label></div><div class="cart-item-display ci-25"><div class="acart-thumb" style="background-image:url('https://patek-res.cloudinary.com/media/267069/51882')"></div><div class="cart-item-info"><h4>Nautilus 5740/1G-001</h4><div class="p-cat">Patek Philippe</div><div class="cart-price">19 500 000 ₽</div></div><label for="acc-item-25" class="remove-label">Удалить</label></div><div class="cart-item-display ci-26"><div class="acart-thumb" style="background-image:url('https://patek-res.cloudinary.com/media/278374/51882')"></div><div class="cart-item-info"><h4>Nautilus 5726/1A</h4><div class="p-cat">Patek Philippe</div><div class="cart-price">8 700 000 ₽</div></div><label for="acc-item-26" class="remove-label">Удалить</label></div><div class="cart-item-display ci-27"><div class="acart-thumb" style="background-image:url('https://patek-res.cloudinary.com/media/267068/51882')"></div><div class="cart-item-info"><h4>Nautilus Cufflinks 205.9057G-013</h4><div class="p-cat">Patek Philippe</div><div class="cart-price">1 250 000 ₽</div></div><label for="acc-item-27" class="remove-label">Удалить</label></div><div class="cart-item-display ci-28"><div class="acart-thumb" style="background-image:url('https://patek-res.cloudinary.com/media/267457/51882')"></div><div class="cart-item-info"><h4>Nautilus Ring 275.9751/1.R4.530</h4><div class="p-cat">Patek Philippe</div><div class="cart-price">1 480 000 ₽</div></div><label for="acc-item-28" class="remove-label">Удалить</label></div>
+    </aside>
+
+    <!-- Основная область: вкладки брендов и каталог -->
+    <main class="acc-wrap" id="catalog">
+        <div class="acc-title"><h1>Премиум-аксессуары</h1><p>Ювелирные изделия, часы и кожаные аксессуары четырёх домов</p></div>
+        <nav class="tab-bar" aria-label="Бренды"><label for="tab-ch" class="tab-label lbl-ch">Chrome Hearts</label><label for="tab-tf" class="tab-label lbl-tf">Tiffany & Co</label><label for="tab-hm" class="tab-label lbl-hm">Hermès</label><label for="tab-pp" class="tab-label lbl-pp">Patek Philippe</label></nav>
+        <section class="brand-panel panel-ch" id="zone-ch">
+            <header class="zone-head"><h2>Chrome Hearts</h2><p>Мрачная готика и гранж. Массивное серебро 925, кресты и ручная работа.</p></header>
+            <div class="acc-grid">
+            <article class="p-card">
+                <a href="#am-1" class="p-img local ic-ring" data-name="CH Cross Band Ring"><span class="i i1" style="background-image:url('img/ch-1-1.jpg')"></span><span class="i i2" style="background-image:url('img/ch-1-2.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-1" class="p-title">CH Cross Band Ring</a><div class="p-cat">Кольца · Серебро 925</div></div>
+                <div class="p-row"><span class="p-price">59 900 ₽</span><label for="acc-item-1" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-2" class="p-img local ic-ring" data-name="SBT Band Ring"><span class="i i1" style="background-image:url('img/ch-2-1.jpg')"></span><span class="i i2" style="background-image:url('img/ch-2-2.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-2" class="p-title">SBT Band Ring</a><div class="p-cat">Кольца · Серебро 925</div></div>
+                <div class="p-row"><span class="p-price">42 900 ₽</span><label for="acc-item-2" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-3" class="p-img local ic-ring" data-name="Keeper Ring"><span class="i i1" style="background-image:url('img/ch-3-1.jpg')"></span><span class="i i2" style="background-image:url('img/ch-3-2.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-3" class="p-title">Keeper Ring</a><div class="p-cat">Кольца · Серебро 925</div></div>
+                <div class="p-row"><span class="p-price">118 000 ₽</span><label for="acc-item-3" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-4" class="p-img local ic-ring" data-name="Spacer Ring"><span class="i i1" style="background-image:url('img/ch-4-1.jpg')"></span><span class="i i2" style="background-image:url('img/ch-4-2.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-4" class="p-title">Spacer Ring</a><div class="p-cat">Кольца · Серебро 925</div></div>
+                <div class="p-row"><span class="p-price">46 500 ₽</span><label for="acc-item-4" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-5" class="p-img local ic-bracelet" data-name="Paper Chain Bracelet"><span class="i i1" style="background-image:url('img/ch-5-1.jpg')"></span><span class="i i2" style="background-image:url('img/ch-5-2.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-5" class="p-title">Paper Chain Bracelet</a><div class="p-cat">Браслеты · Серебро 925</div></div>
+                <div class="p-row"><span class="p-price">185 000 ₽</span><label for="acc-item-5" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-6" class="p-img local ic-bracelet" data-name="Dagger ID Bracelet"><span class="i i1" style="background-image:url('img/ch-6-1.jpg')"></span><span class="i i2" style="background-image:url('img/ch-6-2.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-6" class="p-title">Dagger ID Bracelet</a><div class="p-cat">Браслеты · Серебро 925</div></div>
+                <div class="p-row"><span class="p-price">320 000 ₽</span><label for="acc-item-6" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-7" class="p-img local ic-ring" data-name="Cemetery Crosses Ring"><span class="i i1" style="background-image:url('img/ch-7-1.jpg')"></span><span class="i i2" style="background-image:url('img/ch-7-2.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-7" class="p-title">Cemetery Crosses Ring</a><div class="p-cat">Кольца · Серебро 925</div></div>
+                <div class="p-row"><span class="p-price">98 000 ₽</span><label for="acc-item-7" class="p-add"></label></div>
+            </article>
+            </div>
+        </section>
+<section class="brand-panel panel-tf" id="zone-tf">
+            <header class="zone-head"><h2>Tiffany & Co</h2><p>Классическое ювелирное искусство и строгий минимализм. Коллекция HardWear.</p></header>
+            <div class="acc-grid">
+            <article class="p-card">
+                <a href="#am-8" class="p-img ic-bracelet" data-name="HardWear Small Link Bracelet"><span class="i i1" style="background-image:url('https://media.tiffany.com/is/image/tco/60153085_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="i i2" style="background-image:url('https://media.tiffany.com/is/image/tco/60153085_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></span></a>
+                <div class="p-meta"><a href="#am-8" class="p-title">HardWear Small Link Bracelet</a><div class="p-cat">Браслеты · Серебро 925</div></div>
+                <div class="p-row"><span class="p-price">149 900 ₽</span><label for="acc-item-8" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-9" class="p-img ic-bracelet" data-name="HardWear Large Link Bracelet"><span class="i i1" style="background-image:url('https://media.tiffany.com/is/image/tco/60153091_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="i i2" style="background-image:url('https://media.tiffany.com/is/image/tco/60153091_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></span></a>
+                <div class="p-meta"><a href="#am-9" class="p-title">HardWear Large Link Bracelet</a><div class="p-cat">Браслеты · Серебро 925</div></div>
+                <div class="p-row"><span class="p-price">179 000 ₽</span><label for="acc-item-9" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-10" class="p-img ic-bracelet" data-name="HardWear Elongated Link Bracelet"><span class="i i1" style="background-image:url('https://media.tiffany.com/is/image/tco/63104213_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="i i2" style="background-image:url('https://media.tiffany.com/is/image/tco/63104213_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></span></a>
+                <div class="p-meta"><a href="#am-10" class="p-title">HardWear Elongated Link Bracelet</a><div class="p-cat">Браслеты · Серебро 925</div></div>
+                <div class="p-row"><span class="p-price">139 000 ₽</span><label for="acc-item-10" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-11" class="p-img ic-bracelet" data-name="HardWear Ball Bracelet"><span class="i i1" style="background-image:url('https://media.tiffany.com/is/image/tco/60154619_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="i i2" style="background-image:url('https://media.tiffany.com/is/image/tco/60154619_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></span></a>
+                <div class="p-meta"><a href="#am-11" class="p-title">HardWear Ball Bracelet</a><div class="p-cat">Браслеты · Серебро 925</div></div>
+                <div class="p-row"><span class="p-price">125 000 ₽</span><label for="acc-item-11" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-12" class="p-img ic-bracelet" data-name="HardWear Pearl Bracelet"><span class="i i1" style="background-image:url('https://media.tiffany.com/is/image/tco/67063678_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="i i2" style="background-image:url('https://media.tiffany.com/is/image/tco/67063678_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></span></a>
+                <div class="p-meta"><a href="#am-12" class="p-title">HardWear Pearl Bracelet</a><div class="p-cat">Браслеты · Серебро 925, жемчуг</div></div>
+                <div class="p-row"><span class="p-price">135 000 ₽</span><label for="acc-item-12" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-13" class="p-img ic-bracelet" data-name="HardWear Pearl Lock Bracelet"><span class="i i1" style="background-image:url('https://media.tiffany.com/is/image/tco/67063406_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="i i2" style="background-image:url('https://media.tiffany.com/is/image/tco/67063406_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></span></a>
+                <div class="p-meta"><a href="#am-13" class="p-title">HardWear Pearl Lock Bracelet</a><div class="p-cat">Браслеты · Серебро 925, жемчуг</div></div>
+                <div class="p-row"><span class="p-price">152 000 ₽</span><label for="acc-item-13" class="p-add"></label></div>
+            </article>
+            </div>
+        </section>
+<section class="brand-panel panel-hm" id="zone-hm">
+            <header class="zone-head"><h2>Hermès</h2><p>Статусные кожаные аксессуары: ремни, браслеты Clic H и портмоне.</p></header>
+            <div class="acc-grid">
+            <article class="p-card">
+                <a href="#am-14" class="p-img local ic-bracelet" data-name="Clic H Bracelet"><span class="i i1" style="background-image:url('img/hm-1-1.jpg')"></span><span class="i i2" style="background-image:url('img/hm-1-2.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-14" class="p-title">Clic H Bracelet</a><div class="p-cat">Браслеты · Эмаль, палладий</div></div>
+                <div class="p-row"><span class="p-price">52 000 ₽</span><label for="acc-item-14" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-15" class="p-img local ic-bracelet" data-name="Clic Clac H Bracelet"><span class="i i1" style="background-image:url('img/hm-2-1.jpg')"></span><span class="i i2" style="background-image:url('img/hm-2-2.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-15" class="p-title">Clic Clac H Bracelet</a><div class="p-cat">Браслеты · Эмаль, палладий</div></div>
+                <div class="p-row"><span class="p-price">64 000 ₽</span><label for="acc-item-15" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-16" class="p-img local ic-bracelet" data-name="Collier de Chien Bracelet"><span class="i i1" style="background-image:url('img/hm-3-1.jpg')"></span><span class="i i2" style="background-image:url('img/hm-3-2.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-16" class="p-title">Collier de Chien Bracelet</a><div class="p-cat">Браслеты · Кожа, палладий</div></div>
+                <div class="p-row"><span class="p-price">88 000 ₽</span><label for="acc-item-16" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-17" class="p-img local ic-belt" data-name="Constance Belt Buckle &amp; Reversible Strap 32 mm"><span class="i i1" style="background-image:url('img/hm-4-1.jpg')"></span><span class="i i2" style="background-image:url('img/hm-4-2.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-17" class="p-title">Constance Belt Buckle &amp; Reversible Strap 32 mm</a><div class="p-cat">Ремни · Кожа, металл</div></div>
+                <div class="p-row"><span class="p-price">98 000 ₽</span><label for="acc-item-17" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-18" class="p-img local ic-belt" data-name="H Belt Buckle &amp; Reversible Strap 32 mm"><span class="i i1" style="background-image:url('img/hm-5-1.jpg')"></span><span class="i i2" style="background-image:url('img/hm-5-2.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-18" class="p-title">H Belt Buckle &amp; Reversible Strap 32 mm</a><div class="p-cat">Ремни · Кожа, металл</div></div>
+                <div class="p-row"><span class="p-price">92 000 ₽</span><label for="acc-item-18" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-19" class="p-img local ic-wallet" data-name="Béarn Wallet"><span class="i i1" style="background-image:url('img/hm-6-1.jpg')"></span><span class="i i2" style="background-image:url('img/hm-6-2.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-19" class="p-title">Béarn Wallet</a><div class="p-cat">Портмоне · Кожа</div></div>
+                <div class="p-row"><span class="p-price">185 000 ₽</span><label for="acc-item-19" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-20" class="p-img local ic-wallet" data-name="Dogon Duo Wallet"><span class="i i1" style="background-image:url('img/hm-7-1.jpg')"></span><span class="i i2" style="background-image:url('img/hm-7-2.jpg')"></span></a>
+                <div class="p-meta"><a href="#am-20" class="p-title">Dogon Duo Wallet</a><div class="p-cat">Портмоне · Кожа</div></div>
+                <div class="p-row"><span class="p-price">142 000 ₽</span><label for="acc-item-20" class="p-add"></label></div>
+            </article>
+            </div>
+        </section>
+<section class="brand-panel panel-pp" id="zone-pp">
+            <header class="zone-head"><h2>Patek Philippe</h2><p>Высокое часовое искусство. Модели Nautilus и аксессуары к ним. Свободное пространство и строгая геометрия.</p></header>
+            <div class="acc-grid">
+            <article class="p-card">
+                <a href="#am-21" class="p-img ic-watch" data-name="Nautilus 5711/111P-001"><span class="i i1" style="background-image:url('https://patek-res.cloudinary.com/media/374191/51887')"></span><span class="i i2" style="background-image:url('https://patek-res.cloudinary.com/media/374192/51903')"></span></a>
+                <div class="p-meta"><a href="#am-21" class="p-title">Nautilus 5711/111P-001</a><div class="p-cat">Часы · Платина, сапфиры</div></div>
+                <div class="p-row"><span class="p-price">24 900 000 ₽</span><label for="acc-item-21" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-22" class="p-img ic-watch" data-name="Nautilus 5811/1G-001"><span class="i i1" style="background-image:url('https://patek-res.cloudinary.com/media/175354/51882')"></span><span class="i i2" style="background-image:url('https://patek-res.cloudinary.com/media/278367/51882')"></span></a>
+                <div class="p-meta"><a href="#am-22" class="p-title">Nautilus 5811/1G-001</a><div class="p-cat">Часы · Белое золото</div></div>
+                <div class="p-row"><span class="p-price">7 900 000 ₽</span><label for="acc-item-22" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-23" class="p-img ic-watch" data-name="Nautilus 5712/1R-001"><span class="i i1" style="background-image:url('https://patek-res.cloudinary.com/media/175352/51882')"></span><span class="i i2" style="background-image:url('https://patek-res.cloudinary.com/media/278375/51882')"></span></a>
+                <div class="p-meta"><a href="#am-23" class="p-title">Nautilus 5712/1R-001</a><div class="p-cat">Часы · Розовое золото</div></div>
+                <div class="p-row"><span class="p-price">9 400 000 ₽</span><label for="acc-item-23" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-24" class="p-img ic-watch" data-name="Nautilus 5990/1R-001"><span class="i i1" style="background-image:url('https://patek-res.cloudinary.com/media/175378/51882')"></span><span class="i i2" style="background-image:url('https://patek-res.cloudinary.com/media/4639/51882')"></span></a>
+                <div class="p-meta"><a href="#am-24" class="p-title">Nautilus 5990/1R-001</a><div class="p-cat">Часы · Розовое золото</div></div>
+                <div class="p-row"><span class="p-price">14 800 000 ₽</span><label for="acc-item-24" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-25" class="p-img ic-watch" data-name="Nautilus 5740/1G-001"><span class="i i1" style="background-image:url('https://patek-res.cloudinary.com/media/267069/51882')"></span><span class="i i2" style="background-image:url('https://patek-res.cloudinary.com/media/278376/51882')"></span></a>
+                <div class="p-meta"><a href="#am-25" class="p-title">Nautilus 5740/1G-001</a><div class="p-cat">Часы · Белое золото</div></div>
+                <div class="p-row"><span class="p-price">19 500 000 ₽</span><label for="acc-item-25" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-26" class="p-img ic-watch" data-name="Nautilus 5726/1A"><span class="i i1" style="background-image:url('https://patek-res.cloudinary.com/media/278374/51882')"></span><span class="i i2" style="background-image:url('https://patek-res.cloudinary.com/media/278370/51882')"></span></a>
+                <div class="p-meta"><a href="#am-26" class="p-title">Nautilus 5726/1A</a><div class="p-cat">Часы · Сталь</div></div>
+                <div class="p-row"><span class="p-price">8 700 000 ₽</span><label for="acc-item-26" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-27" class="p-img ic-cufflink" data-name="Nautilus Cufflinks 205.9057G-013"><span class="i i1" style="background-image:url('https://patek-res.cloudinary.com/media/267068/51882')"></span><span class="i i2" style="background-image:url('https://patek-res.cloudinary.com/media/278368/51882')"></span></a>
+                <div class="p-meta"><a href="#am-27" class="p-title">Nautilus Cufflinks 205.9057G-013</a><div class="p-cat">Запонки · Белое золото 18 к</div></div>
+                <div class="p-row"><span class="p-price">1 250 000 ₽</span><label for="acc-item-27" class="p-add"></label></div>
+            </article>
+<article class="p-card">
+                <a href="#am-28" class="p-img ic-ring" data-name="Nautilus Ring 275.9751/1.R4.530"><span class="i i1" style="background-image:url('https://patek-res.cloudinary.com/media/267457/51882')"></span><span class="i i2" style="background-image:url('https://patek-res.cloudinary.com/media/278377/51882')"></span></a>
+                <div class="p-meta"><a href="#am-28" class="p-title">Nautilus Ring 275.9751/1.R4.530</a><div class="p-cat">Кольца · Розовое золото 18 к</div></div>
+                <div class="p-row"><span class="p-price">1 480 000 ₽</span><label for="acc-item-28" class="p-add"></label></div>
+            </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Карточки товаров в подробном виде (открываются по якорю) -->
+    <div class="modals">
+        <div id="am-1" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-ring"><span class="gi gi-1" style="background-image:url('img/ch-1-1.jpg')"></span><span class="gi gi-2" style="background-image:url('img/ch-1-2.jpg')"></span><span class="gi gi-3" style="background-image:url('img/ch-1-3.jpg')"></span></div><div class="am-thumbs"><label for="g-1-1" class="gt gt-1" style="background-image:url('img/ch-1-1.jpg')"></label><label for="g-1-2" class="gt gt-2" style="background-image:url('img/ch-1-2.jpg')"></label><label for="g-1-3" class="gt gt-3" style="background-image:url('img/ch-1-3.jpg')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Chrome Hearts</div>
+                <h3 class="am-title">CH Cross Band Ring</h3>
+                <div class="am-price">59 900 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Кольца</div><div><span>Материал</span>Серебро 925</div></div>
+                <p class="am-desc">Кольцо с классическим крестом Chrome Hearts. Ручная работа, массивный профиль.</p>
+                <label for="acc-item-1" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-2" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-ring"><span class="gi gi-1" style="background-image:url('img/ch-2-1.jpg')"></span><span class="gi gi-2" style="background-image:url('img/ch-2-2.jpg')"></span><span class="gi gi-3" style="background-image:url('img/ch-2-3.jpg')"></span></div><div class="am-thumbs"><label for="g-2-1" class="gt gt-1" style="background-image:url('img/ch-2-1.jpg')"></label><label for="g-2-2" class="gt gt-2" style="background-image:url('img/ch-2-2.jpg')"></label><label for="g-2-3" class="gt gt-3" style="background-image:url('img/ch-2-3.jpg')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Chrome Hearts</div>
+                <h3 class="am-title">SBT Band Ring</h3>
+                <div class="am-price">42 900 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Кольца</div><div><span>Материал</span>Серебро 925</div></div>
+                <p class="am-desc">Одно из самых популярных парных колец бренда. Выразительная гравировка по ободку.</p>
+                <label for="acc-item-2" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-3" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-ring"><span class="gi gi-1" style="background-image:url('img/ch-3-1.jpg')"></span><span class="gi gi-2" style="background-image:url('img/ch-3-2.jpg')"></span><span class="gi gi-3" style="background-image:url('img/ch-3-3.jpg')"></span></div><div class="am-thumbs"><label for="g-3-1" class="gt gt-1" style="background-image:url('img/ch-3-1.jpg')"></label><label for="g-3-2" class="gt gt-2" style="background-image:url('img/ch-3-2.jpg')"></label><label for="g-3-3" class="gt gt-3" style="background-image:url('img/ch-3-3.jpg')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Chrome Hearts</div>
+                <h3 class="am-title">Keeper Ring</h3>
+                <div class="am-price">118 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Кольца</div><div><span>Материал</span>Серебро 925</div></div>
+                <p class="am-desc">Тяжёлое кольцо-«король» коллекции. Плотное литьё и характерная патина.</p>
+                <label for="acc-item-3" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-4" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-ring"><span class="gi gi-1" style="background-image:url('img/ch-4-1.jpg')"></span><span class="gi gi-2" style="background-image:url('img/ch-4-2.jpg')"></span><span class="gi gi-3" style="background-image:url('img/ch-4-3.jpg')"></span></div><div class="am-thumbs"><label for="g-4-1" class="gt gt-1" style="background-image:url('img/ch-4-1.jpg')"></label><label for="g-4-2" class="gt gt-2" style="background-image:url('img/ch-4-2.jpg')"></label><label for="g-4-3" class="gt gt-3" style="background-image:url('img/ch-4-3.jpg')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Chrome Hearts</div>
+                <h3 class="am-title">Spacer Ring</h3>
+                <div class="am-price">46 500 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Кольца</div><div><span>Материал</span>Серебро 925</div></div>
+                <p class="am-desc">Простое, плотное и динамичное кольцо с узнаваемым почерком Chrome Hearts.</p>
+                <label for="acc-item-4" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-5" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-bracelet"><span class="gi gi-1" style="background-image:url('img/ch-5-1.jpg')"></span><span class="gi gi-2" style="background-image:url('img/ch-5-2.jpg')"></span><span class="gi gi-3" style="background-image:url('img/ch-5-3.jpg')"></span></div><div class="am-thumbs"><label for="g-5-1" class="gt gt-1" style="background-image:url('img/ch-5-1.jpg')"></label><label for="g-5-2" class="gt gt-2" style="background-image:url('img/ch-5-2.jpg')"></label><label for="g-5-3" class="gt gt-3" style="background-image:url('img/ch-5-3.jpg')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Chrome Hearts</div>
+                <h3 class="am-title">Paper Chain Bracelet</h3>
+                <div class="am-price">185 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Браслеты</div><div><span>Материал</span>Серебро 925</div></div>
+                <p class="am-desc">Браслет из массивных звеньев «paper chain» с ручной полировкой.</p>
+                <label for="acc-item-5" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-6" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-bracelet"><span class="gi gi-1" style="background-image:url('img/ch-6-1.jpg')"></span><span class="gi gi-2" style="background-image:url('img/ch-6-2.jpg')"></span><span class="gi gi-3" style="background-image:url('img/ch-6-3.jpg')"></span></div><div class="am-thumbs"><label for="g-6-1" class="gt gt-1" style="background-image:url('img/ch-6-1.jpg')"></label><label for="g-6-2" class="gt gt-2" style="background-image:url('img/ch-6-2.jpg')"></label><label for="g-6-3" class="gt gt-3" style="background-image:url('img/ch-6-3.jpg')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Chrome Hearts</div>
+                <h3 class="am-title">Dagger ID Bracelet</h3>
+                <div class="am-price">320 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Браслеты</div><div><span>Материал</span>Серебро 925</div></div>
+                <p class="am-desc">ID-браслет с кинжалом на крупных звеньях. Тяжёлый, статусный, заметный.</p>
+                <label for="acc-item-6" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-7" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-ring"><span class="gi gi-1" style="background-image:url('img/ch-7-1.jpg')"></span><span class="gi gi-2" style="background-image:url('img/ch-7-2.jpg')"></span><span class="gi gi-3" style="background-image:url('img/ch-7-3.jpg')"></span></div><div class="am-thumbs"><label for="g-7-1" class="gt gt-1" style="background-image:url('img/ch-7-1.jpg')"></label><label for="g-7-2" class="gt gt-2" style="background-image:url('img/ch-7-2.jpg')"></label><label for="g-7-3" class="gt gt-3" style="background-image:url('img/ch-7-3.jpg')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Chrome Hearts</div>
+                <h3 class="am-title">Cemetery Crosses Ring</h3>
+                <div class="am-price">98 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Кольца</div><div><span>Материал</span>Серебро 925</div></div>
+                <p class="am-desc">Кольцо с рельефом из кладбищенских крестов. Тёмная готическая эстетика бренда.</p>
+                <label for="acc-item-7" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-8" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-bracelet"><span class="gi gi-1" style="background-image:url('https://media.tiffany.com/is/image/tco/60153085_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="gi gi-2" style="background-image:url('https://media.tiffany.com/is/image/tco/60153085_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="gi gi-3" style="background-image:url('https://media.tiffany.com/is/image/tco/60153085_BLT_ALT3X1?hei=900&amp;wid=900&amp;fmt=webp')"></span></div><div class="am-thumbs"><label for="g-8-1" class="gt gt-1" style="background-image:url('https://media.tiffany.com/is/image/tco/60153085_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></label><label for="g-8-2" class="gt gt-2" style="background-image:url('https://media.tiffany.com/is/image/tco/60153085_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></label><label for="g-8-3" class="gt gt-3" style="background-image:url('https://media.tiffany.com/is/image/tco/60153085_BLT_ALT3X1?hei=900&amp;wid=900&amp;fmt=webp')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Tiffany &amp; Co</div>
+                <h3 class="am-title">HardWear Small Link Bracelet</h3>
+                <div class="am-price">149 900 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Браслеты</div><div><span>Материал</span>Серебро 925</div></div>
+                <p class="am-desc">Браслет из калиброванных звеньев по мотивам модели 1962 года из архива Дома. Размер звена: малый.</p>
+                <label for="acc-item-8" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-9" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-bracelet"><span class="gi gi-1" style="background-image:url('https://media.tiffany.com/is/image/tco/60153091_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="gi gi-2" style="background-image:url('https://media.tiffany.com/is/image/tco/60153091_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="gi gi-3" style="background-image:url('https://media.tiffany.com/is/image/tco/60153091_BLT_ALT3X1?hei=900&amp;wid=900&amp;fmt=webp')"></span></div><div class="am-thumbs"><label for="g-9-1" class="gt gt-1" style="background-image:url('https://media.tiffany.com/is/image/tco/60153091_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></label><label for="g-9-2" class="gt gt-2" style="background-image:url('https://media.tiffany.com/is/image/tco/60153091_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></label><label for="g-9-3" class="gt gt-3" style="background-image:url('https://media.tiffany.com/is/image/tco/60153091_BLT_ALT3X1?hei=900&amp;wid=900&amp;fmt=webp')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Tiffany &amp; Co</div>
+                <h3 class="am-title">HardWear Large Link Bracelet</h3>
+                <div class="am-price">179 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Браслеты</div><div><span>Материал</span>Серебро 925</div></div>
+                <p class="am-desc">Крупные звенья в духе архивного браслета 1962 года. Смелая цепь, заметный акцент.</p>
+                <label for="acc-item-9" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-10" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-bracelet"><span class="gi gi-1" style="background-image:url('https://media.tiffany.com/is/image/tco/63104213_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="gi gi-2" style="background-image:url('https://media.tiffany.com/is/image/tco/63104213_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="gi gi-3" style="background-image:url('https://media.tiffany.com/is/image/tco/63104213_BLT_ALT3X1?hei=900&amp;wid=900&amp;fmt=webp')"></span></div><div class="am-thumbs"><label for="g-10-1" class="gt gt-1" style="background-image:url('https://media.tiffany.com/is/image/tco/63104213_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></label><label for="g-10-2" class="gt gt-2" style="background-image:url('https://media.tiffany.com/is/image/tco/63104213_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></label><label for="g-10-3" class="gt gt-3" style="background-image:url('https://media.tiffany.com/is/image/tco/63104213_BLT_ALT3X1?hei=900&amp;wid=900&amp;fmt=webp')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Tiffany &amp; Co</div>
+                <h3 class="am-title">HardWear Elongated Link Bracelet</h3>
+                <div class="am-price">139 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Браслеты</div><div><span>Материал</span>Серебро 925</div></div>
+                <p class="am-desc">Фирменное звено коллекции в вытянутой форме. Хорошо сочетается с браслетами из золота.</p>
+                <label for="acc-item-10" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-11" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-bracelet"><span class="gi gi-1" style="background-image:url('https://media.tiffany.com/is/image/tco/60154619_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="gi gi-2" style="background-image:url('https://media.tiffany.com/is/image/tco/60154619_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="gi gi-3" style="background-image:url('https://media.tiffany.com/is/image/tco/60154619_BLT_ALT3X1?hei=900&amp;wid=900&amp;fmt=webp')"></span></div><div class="am-thumbs"><label for="g-11-1" class="gt gt-1" style="background-image:url('https://media.tiffany.com/is/image/tco/60154619_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></label><label for="g-11-2" class="gt gt-2" style="background-image:url('https://media.tiffany.com/is/image/tco/60154619_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></label><label for="g-11-3" class="gt gt-3" style="background-image:url('https://media.tiffany.com/is/image/tco/60154619_BLT_ALT3X1?hei=900&amp;wid=900&amp;fmt=webp')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Tiffany &amp; Co</div>
+                <h3 class="am-title">HardWear Ball Bracelet</h3>
+                <div class="am-price">125 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Браслеты</div><div><span>Материал</span>Серебро 925</div></div>
+                <p class="am-desc">Браслет с шариками 10 мм. Базовый элемент стека из нескольких браслетов.</p>
+                <label for="acc-item-11" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-12" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-bracelet"><span class="gi gi-1" style="background-image:url('https://media.tiffany.com/is/image/tco/67063678_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="gi gi-2" style="background-image:url('https://media.tiffany.com/is/image/tco/67063678_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="gi gi-3" style="background-image:url('https://media.tiffany.com/is/image/tco/67063678_BLT_ALT3X1?hei=900&amp;wid=900&amp;fmt=webp')"></span></div><div class="am-thumbs"><label for="g-12-1" class="gt gt-1" style="background-image:url('https://media.tiffany.com/is/image/tco/67063678_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></label><label for="g-12-2" class="gt gt-2" style="background-image:url('https://media.tiffany.com/is/image/tco/67063678_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></label><label for="g-12-3" class="gt gt-3" style="background-image:url('https://media.tiffany.com/is/image/tco/67063678_BLT_ALT3X1?hei=900&amp;wid=900&amp;fmt=webp')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Tiffany &amp; Co</div>
+                <h3 class="am-title">HardWear Pearl Bracelet</h3>
+                <div class="am-price">135 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Браслеты</div><div><span>Материал</span>Серебро 925, жемчуг</div></div>
+                <p class="am-desc">Контраст массивных звеньев и пресноводного жемчуга 7–8 мм.</p>
+                <label for="acc-item-12" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-13" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-bracelet"><span class="gi gi-1" style="background-image:url('https://media.tiffany.com/is/image/tco/67063406_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="gi gi-2" style="background-image:url('https://media.tiffany.com/is/image/tco/67063406_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></span><span class="gi gi-3" style="background-image:url('https://media.tiffany.com/is/image/tco/67063406_BLT_ALT3X1?hei=900&amp;wid=900&amp;fmt=webp')"></span></div><div class="am-thumbs"><label for="g-13-1" class="gt gt-1" style="background-image:url('https://media.tiffany.com/is/image/tco/67063406_BLT_MAIN1X1?hei=900&amp;wid=900&amp;fmt=webp')"></label><label for="g-13-2" class="gt gt-2" style="background-image:url('https://media.tiffany.com/is/image/tco/67063406_BLT_SIO2X1?hei=900&amp;wid=900&amp;fmt=webp')"></label><label for="g-13-3" class="gt gt-3" style="background-image:url('https://media.tiffany.com/is/image/tco/67063406_BLT_ALT3X1?hei=900&amp;wid=900&amp;fmt=webp')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Tiffany &amp; Co</div>
+                <h3 class="am-title">HardWear Pearl Lock Bracelet</h3>
+                <div class="am-price">152 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Браслеты</div><div><span>Материал</span>Серебро 925, жемчуг</div></div>
+                <p class="am-desc">Браслет с замком-звеном и жемчужинами. Утилитарный стиль и глянец в одном.</p>
+                <label for="acc-item-13" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-14" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-bracelet"><span class="gi gi-1" style="background-image:url('img/hm-1-1.jpg')"></span><span class="gi gi-2" style="background-image:url('img/hm-1-2.jpg')"></span><span class="gi gi-3" style="background-image:url('img/hm-1-3.jpg')"></span></div><div class="am-thumbs"><label for="g-14-1" class="gt gt-1" style="background-image:url('img/hm-1-1.jpg')"></label><label for="g-14-2" class="gt gt-2" style="background-image:url('img/hm-1-2.jpg')"></label><label for="g-14-3" class="gt gt-3" style="background-image:url('img/hm-1-3.jpg')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Hermès</div>
+                <h3 class="am-title">Clic H Bracelet</h3>
+                <div class="am-price">52 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Браслеты</div><div><span>Материал</span>Эмаль, палладий</div></div>
+                <p class="am-desc">Тонкий браслет с эмалью и фирменной застёжкой H. Носится поодиночке или в стеке.</p>
+                <label for="acc-item-14" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-15" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-bracelet"><span class="gi gi-1" style="background-image:url('img/hm-2-1.jpg')"></span><span class="gi gi-2" style="background-image:url('img/hm-2-2.jpg')"></span><span class="gi gi-3" style="background-image:url('img/hm-2-3.jpg')"></span></div><div class="am-thumbs"><label for="g-15-1" class="gt gt-1" style="background-image:url('img/hm-2-1.jpg')"></label><label for="g-15-2" class="gt gt-2" style="background-image:url('img/hm-2-2.jpg')"></label><label for="g-15-3" class="gt gt-3" style="background-image:url('img/hm-2-3.jpg')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Hermès</div>
+                <h3 class="am-title">Clic Clac H Bracelet</h3>
+                <div class="am-price">64 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Браслеты</div><div><span>Материал</span>Эмаль, палладий</div></div>
+                <p class="am-desc">Широкий браслет-манжета с заметной застёжкой H.</p>
+                <label for="acc-item-15" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-16" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-bracelet"><span class="gi gi-1" style="background-image:url('img/hm-3-1.jpg')"></span><span class="gi gi-2" style="background-image:url('img/hm-3-2.jpg')"></span><span class="gi gi-3" style="background-image:url('img/hm-3-3.jpg')"></span></div><div class="am-thumbs"><label for="g-16-1" class="gt gt-1" style="background-image:url('img/hm-3-1.jpg')"></label><label for="g-16-2" class="gt gt-2" style="background-image:url('img/hm-3-2.jpg')"></label><label for="g-16-3" class="gt gt-3" style="background-image:url('img/hm-3-3.jpg')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Hermès</div>
+                <h3 class="am-title">Collier de Chien Bracelet</h3>
+                <div class="am-price">88 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Браслеты</div><div><span>Материал</span>Кожа, палладий</div></div>
+                <p class="am-desc">Кожаный браслет с кольцами и шипами, отсылка к ошейнику Collier de Chien.</p>
+                <label for="acc-item-16" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-17" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-belt"><span class="gi gi-1" style="background-image:url('img/hm-4-1.jpg')"></span><span class="gi gi-2" style="background-image:url('img/hm-4-2.jpg')"></span><span class="gi gi-3" style="background-image:url('img/hm-4-3.jpg')"></span></div><div class="am-thumbs"><label for="g-17-1" class="gt gt-1" style="background-image:url('img/hm-4-1.jpg')"></label><label for="g-17-2" class="gt gt-2" style="background-image:url('img/hm-4-2.jpg')"></label><label for="g-17-3" class="gt gt-3" style="background-image:url('img/hm-4-3.jpg')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Hermès</div>
+                <h3 class="am-title">Constance Belt Buckle &amp; Reversible Strap 32 mm</h3>
+                <div class="am-price">98 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Ремни</div><div><span>Материал</span>Кожа, металл</div></div>
+                <p class="am-desc">Двусторонний кожаный ремень 32 мм с пряжкой-«H».</p>
+                <label for="acc-item-17" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-18" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-belt"><span class="gi gi-1" style="background-image:url('img/hm-5-1.jpg')"></span><span class="gi gi-2" style="background-image:url('img/hm-5-2.jpg')"></span><span class="gi gi-3" style="background-image:url('img/hm-5-3.jpg')"></span></div><div class="am-thumbs"><label for="g-18-1" class="gt gt-1" style="background-image:url('img/hm-5-1.jpg')"></label><label for="g-18-2" class="gt gt-2" style="background-image:url('img/hm-5-2.jpg')"></label><label for="g-18-3" class="gt gt-3" style="background-image:url('img/hm-5-3.jpg')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Hermès</div>
+                <h3 class="am-title">H Belt Buckle &amp; Reversible Strap 32 mm</h3>
+                <div class="am-price">92 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Ремни</div><div><span>Материал</span>Кожа, металл</div></div>
+                <p class="am-desc">Классическая пряжка H и реверсивный ремень 32 мм. Один ремень, два цвета.</p>
+                <label for="acc-item-18" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-19" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-wallet"><span class="gi gi-1" style="background-image:url('img/hm-6-1.jpg')"></span><span class="gi gi-2" style="background-image:url('img/hm-6-2.jpg')"></span><span class="gi gi-3" style="background-image:url('img/hm-6-3.jpg')"></span></div><div class="am-thumbs"><label for="g-19-1" class="gt gt-1" style="background-image:url('img/hm-6-1.jpg')"></label><label for="g-19-2" class="gt gt-2" style="background-image:url('img/hm-6-2.jpg')"></label><label for="g-19-3" class="gt gt-3" style="background-image:url('img/hm-6-3.jpg')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Hermès</div>
+                <h3 class="am-title">Béarn Wallet</h3>
+                <div class="am-price">185 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Портмоне</div><div><span>Материал</span>Кожа</div></div>
+                <p class="am-desc">Кожаное портмоне с характерным клапаном и аккуратной фурнитурой.</p>
+                <label for="acc-item-19" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-20" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-wallet"><span class="gi gi-1" style="background-image:url('img/hm-7-1.jpg')"></span><span class="gi gi-2" style="background-image:url('img/hm-7-2.jpg')"></span><span class="gi gi-3" style="background-image:url('img/hm-7-3.jpg')"></span></div><div class="am-thumbs"><label for="g-20-1" class="gt gt-1" style="background-image:url('img/hm-7-1.jpg')"></label><label for="g-20-2" class="gt gt-2" style="background-image:url('img/hm-7-2.jpg')"></label><label for="g-20-3" class="gt gt-3" style="background-image:url('img/hm-7-3.jpg')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Hermès</div>
+                <h3 class="am-title">Dogon Duo Wallet</h3>
+                <div class="am-price">142 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Портмоне</div><div><span>Материал</span>Кожа</div></div>
+                <p class="am-desc">Компактный кошелёк с карманами для карт и купюр. Фактурная кожа, минимум деталей.</p>
+                <label for="acc-item-20" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-21" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-watch"><span class="gi gi-1" style="background-image:url('https://patek-res.cloudinary.com/media/374191/51887')"></span><span class="gi gi-2" style="background-image:url('https://patek-res.cloudinary.com/media/374192/51903')"></span><span class="gi gi-3" style="background-image:url('https://patek-res.cloudinary.com/media/377827/51882')"></span><span class="gi gi-4" style="background-image:url('https://patek-res.cloudinary.com/media/377824/51882')"></span></div><div class="am-thumbs"><label for="g-21-1" class="gt gt-1" style="background-image:url('https://patek-res.cloudinary.com/media/374191/51887')"></label><label for="g-21-2" class="gt gt-2" style="background-image:url('https://patek-res.cloudinary.com/media/374192/51903')"></label><label for="g-21-3" class="gt gt-3" style="background-image:url('https://patek-res.cloudinary.com/media/377827/51882')"></label><label for="g-21-4" class="gt gt-4" style="background-image:url('https://patek-res.cloudinary.com/media/377824/51882')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Patek Philippe</div>
+                <h3 class="am-title">Nautilus 5711/111P-001</h3>
+                <div class="am-price">24 900 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Часы</div><div><span>Материал</span>Платина, сапфиры</div></div>
+                <p class="am-desc">Платиновый корпус 40 мм, безель с 32 багетными сапфирами (4 кт), калибр 26-330 S C с автоподзаводом.</p>
+                <label for="acc-item-21" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-22" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-watch"><span class="gi gi-1" style="background-image:url('https://patek-res.cloudinary.com/media/175354/51882')"></span><span class="gi gi-2" style="background-image:url('https://patek-res.cloudinary.com/media/278367/51882')"></span><span class="gi gi-3" style="background-image:url('https://patek-res.cloudinary.com/media/278368/51882')"></span></div><div class="am-thumbs"><label for="g-22-1" class="gt gt-1" style="background-image:url('https://patek-res.cloudinary.com/media/175354/51882')"></label><label for="g-22-2" class="gt gt-2" style="background-image:url('https://patek-res.cloudinary.com/media/278367/51882')"></label><label for="g-22-3" class="gt gt-3" style="background-image:url('https://patek-res.cloudinary.com/media/278368/51882')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Patek Philippe</div>
+                <h3 class="am-title">Nautilus 5811/1G-001</h3>
+                <div class="am-price">7 900 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Часы</div><div><span>Материал</span>Белое золото</div></div>
+                <p class="am-desc">Восьмиугольный корпус, дата и центральная секундная стрелка. Белое золото.</p>
+                <label for="acc-item-22" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-23" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-watch"><span class="gi gi-1" style="background-image:url('https://patek-res.cloudinary.com/media/175352/51882')"></span><span class="gi gi-2" style="background-image:url('https://patek-res.cloudinary.com/media/278375/51882')"></span><span class="gi gi-3" style="background-image:url('https://patek-res.cloudinary.com/media/278370/51882')"></span></div><div class="am-thumbs"><label for="g-23-1" class="gt gt-1" style="background-image:url('https://patek-res.cloudinary.com/media/175352/51882')"></label><label for="g-23-2" class="gt gt-2" style="background-image:url('https://patek-res.cloudinary.com/media/278375/51882')"></label><label for="g-23-3" class="gt gt-3" style="background-image:url('https://patek-res.cloudinary.com/media/278370/51882')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Patek Philippe</div>
+                <h3 class="am-title">Nautilus 5712/1R-001</h3>
+                <div class="am-price">9 400 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Часы</div><div><span>Материал</span>Розовое золото</div></div>
+                <p class="am-desc">Nautilus с фазами Луны и калибром 240 PS IRM C LU. Розовое золото.</p>
+                <label for="acc-item-23" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-24" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-watch"><span class="gi gi-1" style="background-image:url('https://patek-res.cloudinary.com/media/175378/51882')"></span><span class="gi gi-2" style="background-image:url('https://patek-res.cloudinary.com/media/4639/51882')"></span><span class="gi gi-3" style="background-image:url('https://patek-res.cloudinary.com/media/278368/51882')"></span></div><div class="am-thumbs"><label for="g-24-1" class="gt gt-1" style="background-image:url('https://patek-res.cloudinary.com/media/175378/51882')"></label><label for="g-24-2" class="gt gt-2" style="background-image:url('https://patek-res.cloudinary.com/media/4639/51882')"></label><label for="g-24-3" class="gt gt-3" style="background-image:url('https://patek-res.cloudinary.com/media/278368/51882')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Patek Philippe</div>
+                <h3 class="am-title">Nautilus 5990/1R-001</h3>
+                <div class="am-price">14 800 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Часы</div><div><span>Материал</span>Розовое золото</div></div>
+                <p class="am-desc">Nautilus Travel Time с флайбек-хронографом, калибр CH 28-520 C FUS.</p>
+                <label for="acc-item-24" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-25" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-watch"><span class="gi gi-1" style="background-image:url('https://patek-res.cloudinary.com/media/267069/51882')"></span><span class="gi gi-2" style="background-image:url('https://patek-res.cloudinary.com/media/278376/51882')"></span><span class="gi gi-3" style="background-image:url('https://patek-res.cloudinary.com/media/278367/51882')"></span></div><div class="am-thumbs"><label for="g-25-1" class="gt gt-1" style="background-image:url('https://patek-res.cloudinary.com/media/267069/51882')"></label><label for="g-25-2" class="gt gt-2" style="background-image:url('https://patek-res.cloudinary.com/media/278376/51882')"></label><label for="g-25-3" class="gt gt-3" style="background-image:url('https://patek-res.cloudinary.com/media/278367/51882')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Patek Philippe</div>
+                <h3 class="am-title">Nautilus 5740/1G-001</h3>
+                <div class="am-price">19 500 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Часы</div><div><span>Материал</span>Белое золото</div></div>
+                <p class="am-desc">Вечный календарь в корпусе Nautilus. Сверхтонкий калибр 240 Q.</p>
+                <label for="acc-item-25" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-26" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-watch"><span class="gi gi-1" style="background-image:url('https://patek-res.cloudinary.com/media/278374/51882')"></span><span class="gi gi-2" style="background-image:url('https://patek-res.cloudinary.com/media/278370/51882')"></span><span class="gi gi-3" style="background-image:url('https://patek-res.cloudinary.com/media/6830/51882')"></span></div><div class="am-thumbs"><label for="g-26-1" class="gt gt-1" style="background-image:url('https://patek-res.cloudinary.com/media/278374/51882')"></label><label for="g-26-2" class="gt gt-2" style="background-image:url('https://patek-res.cloudinary.com/media/278370/51882')"></label><label for="g-26-3" class="gt gt-3" style="background-image:url('https://patek-res.cloudinary.com/media/6830/51882')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Patek Philippe</div>
+                <h3 class="am-title">Nautilus 5726/1A</h3>
+                <div class="am-price">8 700 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Часы</div><div><span>Материал</span>Сталь</div></div>
+                <p class="am-desc">Годовой календарь и фазы Луны в стальном корпусе. Калибр 26-330 S QA LU 24H.</p>
+                <label for="acc-item-26" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-27" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-cufflink"><span class="gi gi-1" style="background-image:url('https://patek-res.cloudinary.com/media/267068/51882')"></span><span class="gi gi-2" style="background-image:url('https://patek-res.cloudinary.com/media/278368/51882')"></span><span class="gi gi-3" style="background-image:url('https://patek-res.cloudinary.com/media/278370/51882')"></span></div><div class="am-thumbs"><label for="g-27-1" class="gt gt-1" style="background-image:url('https://patek-res.cloudinary.com/media/267068/51882')"></label><label for="g-27-2" class="gt gt-2" style="background-image:url('https://patek-res.cloudinary.com/media/278368/51882')"></label><label for="g-27-3" class="gt gt-3" style="background-image:url('https://patek-res.cloudinary.com/media/278370/51882')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Patek Philippe</div>
+                <h3 class="am-title">Nautilus Cufflinks 205.9057G-013</h3>
+                <div class="am-price">1 250 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Запонки</div><div><span>Материал</span>Белое золото 18 к</div></div>
+                <p class="am-desc">Запонки Nautilus из белого золота 18 к с сапфировым стеклом и синим центром.</p>
+                <label for="acc-item-27" class="p-add m-add"></label>
+            </div></div></div>
+<div id="am-28" class="am-overlay"><div class="am-window">
+            <a href="#catalog" class="am-close">&times;</a>
+            <div class="am-left"><div class="am-stage ic-ring"><span class="gi gi-1" style="background-image:url('https://patek-res.cloudinary.com/media/267457/51882')"></span><span class="gi gi-2" style="background-image:url('https://patek-res.cloudinary.com/media/278377/51882')"></span><span class="gi gi-3" style="background-image:url('https://patek-res.cloudinary.com/media/278367/51882')"></span></div><div class="am-thumbs"><label for="g-28-1" class="gt gt-1" style="background-image:url('https://patek-res.cloudinary.com/media/267457/51882')"></label><label for="g-28-2" class="gt gt-2" style="background-image:url('https://patek-res.cloudinary.com/media/278377/51882')"></label><label for="g-28-3" class="gt gt-3" style="background-image:url('https://patek-res.cloudinary.com/media/278367/51882')"></label></div></div>
+            <div class="am-right">
+                <div class="am-brand">Patek Philippe</div>
+                <h3 class="am-title">Nautilus Ring 275.9751/1.R4.530</h3>
+                <div class="am-price">1 480 000 ₽</div>
+                <div class="am-spec"><div><span>Категория</span>Кольца</div><div><span>Материал</span>Розовое золото 18 к</div></div>
+                <p class="am-desc">Кольцо Nautilus из розового золота 18 к, 48 бриллиантов (около 0,4 кт), ширина 10 мм.</p>
+                <label for="acc-item-28" class="p-add m-add"></label>
+            </div></div></div>
+    </div>
+
+    <div class="toast-container"><div class="toast toast-a1">CH Cross Band Ring: в корзине</div><div class="toast toast-a2">SBT Band Ring: в корзине</div><div class="toast toast-a3">Keeper Ring: в корзине</div><div class="toast toast-a4">Spacer Ring: в корзине</div><div class="toast toast-a5">Paper Chain Bracelet: в корзине</div><div class="toast toast-a6">Dagger ID Bracelet: в корзине</div><div class="toast toast-a7">Cemetery Crosses Ring: в корзине</div><div class="toast toast-a8">HardWear Small Link Bracelet: в корзине</div><div class="toast toast-a9">HardWear Large Link Bracelet: в корзине</div><div class="toast toast-a10">HardWear Elongated Link Bracelet: в корзине</div><div class="toast toast-a11">HardWear Ball Bracelet: в корзине</div><div class="toast toast-a12">HardWear Pearl Bracelet: в корзине</div><div class="toast toast-a13">HardWear Pearl Lock Bracelet: в корзине</div><div class="toast toast-a14">Clic H Bracelet: в корзине</div><div class="toast toast-a15">Clic Clac H Bracelet: в корзине</div><div class="toast toast-a16">Collier de Chien Bracelet: в корзине</div><div class="toast toast-a17">Constance Belt Buckle &amp; Reversible Strap 32 mm: в корзине</div><div class="toast toast-a18">H Belt Buckle &amp; Reversible Strap 32 mm: в корзине</div><div class="toast toast-a19">Béarn Wallet: в корзине</div><div class="toast toast-a20">Dogon Duo Wallet: в корзине</div><div class="toast toast-a21">Nautilus 5711/111P-001: в корзине</div><div class="toast toast-a22">Nautilus 5811/1G-001: в корзине</div><div class="toast toast-a23">Nautilus 5712/1R-001: в корзине</div><div class="toast toast-a24">Nautilus 5990/1R-001: в корзине</div><div class="toast toast-a25">Nautilus 5740/1G-001: в корзине</div><div class="toast toast-a26">Nautilus 5726/1A: в корзине</div><div class="toast toast-a27">Nautilus Cufflinks 205.9057G-013: в корзине</div><div class="toast toast-a28">Nautilus Ring 275.9751/1.R4.530: в корзине</div></div>
+
+    <div class="feedback-modal">
+        <div class="feedback-content">
+            <label for="feedback-toggle" class="close-feedback">&times;</label>
+            <h2 style="margin-top:0; color:#fff;">ОБРАТНАЯ СВЯЗЬ</h2>
+            <p style="color:#888; font-size:13px; margin-bottom:20px;">Напишите нам напрямую на<br><b style="color:#fff;">swdreamsshop@gmail.com</b></p>
+            <input type="text" class="feedback-input" placeholder="Ваш Email">
+            <textarea class="feedback-textarea" placeholder="Ваш вопрос..."></textarea>
+            <label for="feedback-toggle" class="feedback-submit">Отправить</label>
+        </div>
+    </div>
+
+    <footer class="footer-wrap">
+        <div class="footer-left">
+            <img src="image_338baf.png" alt="О нас">
+            <div class="about-box">
+                <h3>О нас</h3>
+                <p>Sweet Dreams Shop — концептуальный бутик премиальной и редкой обуви. Основан в 2018 году. Наш флагманский магазин находится по адресу: г. Москва, Столешников переулок, д. 7.</p>
+            </div>
+        </div>
+        <div class="footer-center">© SWDREAMS, 2026</div>
+        <label for="feedback-toggle" class="footer-right">ОБРАТНАЯ СВЯЗЬ</label>
+    </footer>
+</body>
+</html>
